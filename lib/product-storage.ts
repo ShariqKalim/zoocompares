@@ -35,6 +35,8 @@ export function getProducts(): ComparisonProduct[] {
 
 // Add new product
 export function addProduct(product: Omit<ComparisonProduct, 'id' | 'createdAt'>) {
+  if (typeof window === 'undefined') return null;
+  
   const products = getProducts();
   const newProduct: ComparisonProduct = {
     ...product,
@@ -47,12 +49,18 @@ export function addProduct(product: Omit<ComparisonProduct, 'id' | 'createdAt'>)
   return newProduct;
 }
 
+// Delete product
 export function deleteProduct(id: string) {
+  if (typeof window === 'undefined') return;
+  
   const products = getProducts().filter(p => p.id !== id);
   localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
 }
 
+// Update product
 export function updateProduct(id: string, updates: Partial<Omit<ComparisonProduct, 'id' | 'createdAt'>>) {
+  if (typeof window === 'undefined') return undefined;
+  
   const products = getProducts();
   const index = products.findIndex(p => p.id === id);
   if (index !== -1) {
@@ -70,19 +78,27 @@ export function getProductBySlug(slug: string): ComparisonProduct | undefined {
 
 // Authentication
 export function setAdminAuth(token: string) {
+  if (typeof window === 'undefined') return;
+  
   localStorage.setItem(AUTH_KEY, encode(token));
 }
 
 export function getAdminAuth(): string | null {
+  if (typeof window === 'undefined') return null;
+  
   const token = localStorage.getItem(AUTH_KEY);
   return token ? decode(token) : null;
 }
 
 export function clearAdminAuth() {
+  if (typeof window === 'undefined') return;
+  
   localStorage.removeItem(AUTH_KEY);
 }
 
 export function isAdminAuthenticated(): boolean {
+  if (typeof window === 'undefined') return false;
+  
   const token = getAdminAuth();
   return token === 'admin_authenticated_token_12345';
 }

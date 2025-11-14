@@ -10,11 +10,13 @@ export default function SearchBar() {
   const [suggestions, setSuggestions] = useState<any[]>([]);
   const [isOpen, setIsOpen] = useState(false);
   const [products, setProducts] = useState<any[]>([]);
+  const [isClient, setIsClient] = useState(false);
   const router = useRouter();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Load products on mount
   useEffect(() => {
+    setIsClient(true);
     setProducts(getProducts());
   }, []);
 
@@ -79,7 +81,7 @@ export default function SearchBar() {
       </div>
 
       {/* Dropdown Suggestions */}
-      {isOpen && suggestions.length > 0 && (
+      {isClient && isOpen && suggestions.length > 0 && (
         <div className="absolute top-full mt-3 w-full bg-background border border-border rounded-lg shadow-lg z-10 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
           <ul className="py-2">
             {suggestions.map((product) => (

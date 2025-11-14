@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import SearchBar from '@/components/search-bar';
-import CategorySection from '@/components/category-section';
+import dynamic from 'next/dynamic';
+
+const SearchBar = dynamic(() => import('@/components/search-bar'), { ssr: false });
+const CategorySection = dynamic(() => import('@/components/category-section'), { ssr: false });
 
 const StatCard = ({ icon, value, label }: { icon: string; value: string; label: string }) => (
   <div className="flex flex-col items-center text-center">
@@ -29,10 +31,16 @@ const DEFAULT_BUTTONS: ButtonConfig = {
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
-  const [buttonConfig, setButtonConfig] = useState<ButtonConfig>(() => {
+  const [buttonConfig, setButtonConfig] = useState<ButtonConfig>(DEFAULT_BUTTONS);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
     const storedConfig = localStorage.getItem('buttonConfig');
-    return storedConfig ? JSON.parse(storedConfig) : DEFAULT_BUTTONS;
-  });
+    if (storedConfig) {
+      setButtonConfig(JSON.parse(storedConfig));
+    }
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -41,8 +49,14 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('buttonConfig', JSON.stringify(buttonConfig));
-  }, [buttonConfig]);
+    if (isClient) {
+      localStorage.setItem('buttonConfig', JSON.stringify(buttonConfig));
+    }
+  }, [buttonConfig, isClient]);
+
+  if (!isClient) {
+    return null;
+  }
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
