@@ -1,0 +1,10 @@
+{
+  "/[slug]/page": "app/[slug]/page.js",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/demat-accounts/page": "app/demat-accounts/page.js",
+  "/page": "app/page.js",
+  "/search/[query]/page": "app/search/[query]/page.js",
+  "/vpn/page": "app/vpn/page.js",
+  "/web-hosting/page": "app/web-hosting/page.js"
+}

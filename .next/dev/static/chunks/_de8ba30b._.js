@@ -4,7 +4,7 @@
 
 __turbopack_context__.s([
     "default",
-    ()=>WebHostingPage
+    ()=>DematAccountsPage
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
@@ -13,42 +13,42 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
-const webHostingProviders = [
+const dematBrokers = [
     {
         id: 1,
-        name: 'Bluehost',
-        price: '$2.95/mo',
-        rating: 4.5,
+        name: 'Zerodha',
+        price: '₹0 brokerage',
+        rating: 4.7,
         features: [
-            'Free domain',
-            'SSL certificate',
-            '24/7 support'
+            'Lowest fees',
+            'Best platform',
+            '2M+ users'
         ]
     },
     {
         id: 2,
-        name: 'SiteGround',
-        price: '$3.99/mo',
-        rating: 4.7,
+        name: 'Upstox',
+        price: '₹0 brokerage',
+        rating: 4.5,
         features: [
-            'Speed optimized',
-            'Auto backups',
-            'Free CDN'
+            'Fast execution',
+            'Mobile first',
+            'Algo trading'
         ]
     },
     {
         id: 3,
-        name: 'Hostinger',
-        price: '$1.99/mo',
+        name: 'Angel One',
+        price: '₹20 per trade',
         rating: 4.3,
         features: [
-            'AI Builder',
-            'Email included',
-            'Easy setup'
+            'Free training',
+            'Multi assets',
+            'Advanced tools'
         ]
     }
 ];
-function WebHostingPage() {
+function DematAccountsPage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen bg-background",
         children: [
@@ -77,7 +77,7 @@ function WebHostingPage() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                             className: "text-2xl font-bold text-foreground",
-                            children: "Web Hosting Comparison"
+                            children: "Demat Accounts Comparison"
                         }, void 0, false, {
                             fileName: "[project]/app/web-hosting/page.tsx",
                             lineNumber: 22,
@@ -98,7 +98,7 @@ function WebHostingPage() {
                 className: "max-w-6xl mx-auto px-4 py-12",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "space-y-6",
-                    children: webHostingProviders.map((provider)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    children: dematBrokers.map((broker)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "border border-border rounded-lg p-6 hover:shadow-md transition-shadow",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -108,7 +108,7 @@ function WebHostingPage() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                     className: "text-xl font-semibold text-foreground",
-                                                    children: provider.name
+                                                    children: broker.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/web-hosting/page.tsx",
                                                     lineNumber: 33,
@@ -118,7 +118,7 @@ function WebHostingPage() {
                                                     className: "text-sm text-muted-foreground",
                                                     children: [
                                                         "Rating: ",
-                                                        provider.rating,
+                                                        broker.rating,
                                                         "/5"
                                                     ]
                                                 }, void 0, true, {
@@ -134,7 +134,7 @@ function WebHostingPage() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-lg font-bold text-primary",
-                                            children: provider.price
+                                            children: broker.price
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
                                             lineNumber: 36,
@@ -148,7 +148,7 @@ function WebHostingPage() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                     className: "grid grid-cols-3 gap-2 text-sm",
-                                    children: provider.features.map((feature, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                    children: broker.features.map((feature, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             className: "text-muted-foreground",
                                             children: [
                                                 "✓ ",
@@ -165,7 +165,7 @@ function WebHostingPage() {
                                     columnNumber: 15
                                 }, this)
                             ]
-                        }, provider.id, true, {
+                        }, broker.id, true, {
                             fileName: "[project]/app/web-hosting/page.tsx",
                             lineNumber: 30,
                             columnNumber: 13
@@ -187,9 +187,9 @@ function WebHostingPage() {
         columnNumber: 5
     }, this);
 }
-_c = WebHostingPage;
+_c = DematAccountsPage;
 var _c;
-__turbopack_context__.k.register(_c, "WebHostingPage");
+__turbopack_context__.k.register(_c, "DematAccountsPage");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
