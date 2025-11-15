@@ -67,7 +67,7 @@ export default function Home() {
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-background/80 backdrop-blur border-b border-border' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-            zoocompares
+            zooCompares
           </Link>
         </div>
       </nav>
