@@ -1,0 +1,132 @@
+[00:00:04.739] Server  LOG      ✓ Ready in 3.3s
+[00:00:08.298] Server  LOG      ○ Compiling /web-hosting ...
+[00:00:14.467] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:00.373] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:48.506] Server  LOG      ✓ Compiled in 305ms
+[00:03:49.192] Browser ERROR   ./app/web-hosting/page.tsx:68:100
+Parsing ecmascript source code failed
+  66 |         <meta name="keywords" content="VPN comparison, NordVPN vs ExpressVPN, best VPN 2025, private browsing" />
+  67 |       </Head>
+> 68 |       <main className="min-h-screen bg-gray-50 text-slate-800 py-12 px-6 sm:px-12">Browsing</title>\n        <meta name="description" content="Compare NordVPN, ExpressVPN, and Proton VPN. Find the best VPN for privacy, speed, and streaming in 2025." />\n        <meta name="keywords" content="VPN comparison, NordVPN vs ExpressVPN, best VPN 2025, private browsing" />\n      </Head>\n      <main className="min-h-screen bg-gray-50 text-slate-800 py-12 px-6 sm:px-12">
+     |                                                                                                    ^^^^^^^^^^
+  69 |       <section className="max-w-6xl mx-auto">
+  70 |         {/* Hero */}
+  71 |         <motion.header
+
+Expected '</', got 'jsx text (\n        )'
+
+Import traces:
+  Client Component Browser:
+    ./app/web-hosting/page.tsx [Client Component Browser]
+    ./app/web-hosting/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/web-hosting/page.tsx [Client Component SSR]
+    ./app/web-hosting/page.tsx [Server Component]
+[00:03:56.189] Browser ERROR   ./app/web-hosting/page.tsx:68:100
+Parsing ecmascript source code failed
+  66 |         <meta name="keywords" content="VPN comparison, NordVPN vs ExpressVPN, best VPN 2025, private browsing" />
+  67 |       </Head>
+> 68 |       <main className="min-h-screen bg-gray-50 text-slate-800 py-12 px-6 sm:px-12">Browsing</title>\n        <meta name="description" content="Compare NordVPN, ExpressVPN, and Proton VPN. Find the best VPN for privacy, speed, and streaming in 2025." />\n        <meta name="keywords" content="VPN comparison, NordVPN vs ExpressVPN, best VPN 2025, private browsing" />\n      </Head>\n      <main className="min-h-screen bg-gray-50 text-slate-800 py-12 px-6 sm:px-12">
+     |                                                                                                    ^^^^^^^^^^
+  69 |       <section className="max-w-6xl mx-auto">
+  70 |         {/* Hero */}
+  71 |         <motion.header
+
+Expected '</', got 'jsx text (\n        )'
+
+Import traces:
+  Client Component Browser:
+    ./app/web-hosting/page.tsx [Client Component Browser]
+    ./app/web-hosting/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/web-hosting/page.tsx [Client Component SSR]
+    ./app/web-hosting/page.tsx [Server Component]
+[00:05:37.827] Server  LOG      ✓ Compiled in 546ms
+[00:09:47.553] Server  LOG      ✓ Compiled in 297ms
+[00:09:48.188] Browser ERROR   ./app/web-hosting/page.tsx:1:2
+Parsing ecmascript source code failed
+> 1 | \"use client\"
+    |  ^^^^^^^^^^^^^
+  2 |
+  3 | import React from \"react\";
+  4 | import Head from \"next/head\";
+
+Unterminated string constant
+
+Import traces:
+  Client Component Browser:
+    ./app/web-hosting/page.tsx [Client Component Browser]
+    ./app/web-hosting/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/web-hosting/page.tsx [Client Component SSR]
+    ./app/web-hosting/page.tsx [Server Component]
+[00:09:57.190] Browser ERROR   ./app/web-hosting/page.tsx:1:2
+Parsing ecmascript source code failed
+> 1 | \"use client\"
+    |  ^^^^^^^^^^^^^
+  2 |
+  3 | import React from \"react\";
+  4 | import Head from \"next/head\";
+
+Unterminated string constant
+
+Import traces:
+  Client Component Browser:
+    ./app/web-hosting/page.tsx [Client Component Browser]
+    ./app/web-hosting/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/web-hosting/page.tsx [Client Component SSR]
+    ./app/web-hosting/page.tsx [Server Component]
+[00:15:53.994] Server  LOG      ✓ Compiled in 186ms
+[00:16:07.251] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:20.545] Server  LOG      ✓ Compiled in 137ms
+[00:26:36.350] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:35.291] Server  LOG      ✓ Compiled in 201ms
+[00:28:47.591] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.636] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.646] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.657] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.661] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.665] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.669] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.674] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.686] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:28:47.696] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.700] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.702] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.704] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.706] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.707] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.709] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.711] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.716] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:28:47.836] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.840] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.844] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.847] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.852] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.868] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.876] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.894] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.908] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:28:47.944] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.954] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.970] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.977] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.990] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:47.995] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:48.004] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:48.007] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:28:48.022] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:28:51.125] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/web-hosting/page"
+[00:28:55.119] Server  LOG      ✓ Compiled in 320ms
+[00:28:55.919] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:32.509] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:49.382] Server  LOG      ✓ Compiled in 103ms
+[00:32:02.615] Server  LOG      ✓ Compiled in 120ms
+[00:32:38.724] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:18.602] Server  LOG      ✓ Compiled in 128ms

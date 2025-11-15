@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 17, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 21, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Shariq/Desktop/zoocompares/app/web-hosting/page.tsx"],"sourcesContent":["// Server Component - app/web-hosting/page.tsx\r\nimport ClientPage from \"./client-page\";\r\nimport { Metadata } from \"next\";\r\n\r\nexport const metadata: Metadata = {\r\n  title: \"NordVPN Review — Best VPN for Privacy & Speed in 2025\",\r\n  description:\r\n    \"Compare NordVPN with competitors like ExpressVPN and Surfshark. Find out why NordVPN is the best choice for online privacy, speed, and features.\",\r\n  openGraph: {\r\n    title: \"NordVPN Review — Best VPN for Privacy & Speed in 2025\",\r\n    description:\r\n      \"Explore NordVPN’s features, compare it with alternatives, and secure your network with top-tier privacy and blazing-fast speeds.\",\r\n  },\r\n};\r\n\r\nexport default function Page() {\r\n  return <ClientPage />;\r\n}\r\n"],"names":[],"mappings":"AAAA,8CAA8C;;;;;;;;AAC9C;;;AAGO,MAAM,WAAqB;IAChC,OAAO;IACP,aACE;IACF,WAAW;QACT,OAAO;QACP,aACE;IACJ;AACF;AAEe,SAAS;IACtB,qBAAO,8OAAC,mJAAU;;;;;AACpB"}}]
+}
