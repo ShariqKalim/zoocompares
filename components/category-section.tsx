@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react';
 import { getProducts } from '@/lib/product-storage';
 import { iconMap } from '@/lib/icon-library';
 
-
 const themeColorMap: Record<string, string> = {
   blue: 'bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300',
   green: 'bg-green-50 dark:bg-green-950 text-green-700 dark:text-green-300',
@@ -65,7 +64,7 @@ export default function CategorySection() {
 
         {products.length === 0 && (
           <div className="text-center py-12 text-muted-foreground">
-            <p>No categories available yet. Visit the admin panel to add some!</p>
+            <p>No categories available yet.</p>
           </div>
         )}
       </div>

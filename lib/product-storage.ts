@@ -9,96 +9,61 @@ interface ComparisonProduct {
   colorTheme?: string;
 }
 
-const STORAGE_KEY = 'zoocompares_products';
-const AUTH_KEY = 'zoocompares_admin_auth';
+const DEFAULT_PRODUCTS: ComparisonProduct[] = [
+  {
+    id: 'default_web_hosting',
+    name: 'Web Hosting',
+    description: 'Compare the best web hosting providers for your website',
+    imageUrl: '/web-hosting-concept.png',
+    slug: 'web-hosting',
+    icon: 'Globe',
+    colorTheme: 'blue',
+    createdAt: '2024-01-01T00:00:00.000Z',
+  },
+  {
+    id: 'default_vpn',
+    name: 'VPN',
+    description: 'Compare top VPN services for privacy and security',
+    imageUrl: '/vpn-security.jpg',
+    slug: 'vpn',
+    icon: 'Shield',
+    colorTheme: 'green',
+    createdAt: '2024-01-01T00:00:00.000Z',
+  },
+  {
+    id: 'default_demat',
+    name: 'Demat Accounts',
+    description: 'Compare demat accounts and trading platforms',
+    imageUrl: '/trading-accounts.jpg',
+    slug: 'demat-accounts',
+    icon: 'TrendingUp',
+    colorTheme: 'purple',
+    createdAt: '2024-01-01T00:00:00.000Z',
+  },
+  // ====================================
+  // TO ADD MORE PRODUCTS: Copy the format above and add new objects here
+  // 
+  // Example:
+  // {
+  //   id: 'default_credit_cards',
+  //   name: 'Credit Cards',
+  //   description: 'Compare the best credit cards with rewards and benefits',
+  //   imageUrl: '/credit-cards.jpg',
+  //   slug: 'credit-cards',
+  //   icon: 'CreditCard',
+  //   colorTheme: 'orange',
+  //   createdAt: '2024-01-01T00:00:00.000Z',
+  // },
+  // 
+  // Available icons: Check lib/icon-library.ts for full list
+  // Available colors: blue, green, purple, orange, pink, indigo, red, yellow, teal, cyan
+  // ====================================
+];
 
-// Simple encryption to obfuscate token (not cryptographically secure)
-const encode = (str: string) => Buffer.from(str).toString('base64');
-const decode = (str: string) => Buffer.from(str, 'base64').toString('utf-8');
-
-// Get all products (default + custom)
 export function getProducts(): ComparisonProduct[] {
-  if (typeof window === 'undefined') return [];
-  
-  const stored = localStorage.getItem(STORAGE_KEY);
-  
-  if (!stored) {
-    return [];
-  }
-  
-  try {
-    return JSON.parse(stored);
-  } catch {
-    return [];
-  }
+  return DEFAULT_PRODUCTS;
 }
 
-// Add new product
-export function addProduct(product: Omit<ComparisonProduct, 'id' | 'createdAt'>) {
-  if (typeof window === 'undefined') return null;
-  
-  const products = getProducts();
-  const newProduct: ComparisonProduct = {
-    ...product,
-    id: `product_${Date.now()}`,
-    createdAt: new Date().toISOString(),
-  };
-  
-  products.push(newProduct);
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
-  return newProduct;
-}
-
-// Delete product
-export function deleteProduct(id: string) {
-  if (typeof window === 'undefined') return;
-  
-  const products = getProducts().filter(p => p.id !== id);
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
-}
-
-// Update product
-export function updateProduct(id: string, updates: Partial<Omit<ComparisonProduct, 'id' | 'createdAt'>>) {
-  if (typeof window === 'undefined') return undefined;
-  
-  const products = getProducts();
-  const index = products.findIndex(p => p.id === id);
-  if (index !== -1) {
-    products[index] = { ...products[index], ...updates };
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
-    return products[index];
-  }
-  return undefined;
-}
-
-// Get product by slug
 export function getProductBySlug(slug: string): ComparisonProduct | undefined {
-  return getProducts().find(p => p.slug === slug);
-}
-
-// Authentication
-export function setAdminAuth(token: string) {
-  if (typeof window === 'undefined') return;
-  
-  localStorage.setItem(AUTH_KEY, encode(token));
-}
-
-export function getAdminAuth(): string | null {
-  if (typeof window === 'undefined') return null;
-  
-  const token = localStorage.getItem(AUTH_KEY);
-  return token ? decode(token) : null;
-}
-
-export function clearAdminAuth() {
-  if (typeof window === 'undefined') return;
-  
-  localStorage.removeItem(AUTH_KEY);
-}
-
-export function isAdminAuthenticated(): boolean {
-  if (typeof window === 'undefined') return false;
-  
-  const token = getAdminAuth();
-  return token === 'admin_authenticated_token_12345';
+  return DEFAULT_PRODUCTS.find(p => p.slug === slug);
 }
