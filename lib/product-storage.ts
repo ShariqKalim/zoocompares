@@ -9,8 +9,8 @@ interface ComparisonProduct {
   colorTheme?: string;
 }
 
-const STORAGE_KEY = 'comparizon_products';
-const AUTH_KEY = 'comparizon_admin_auth';
+const STORAGE_KEY = 'zoocompares_products';
+const AUTH_KEY = 'zoocompares_admin_auth';
 
 // Simple encryption to obfuscate token (not cryptographically secure)
 const encode = (str: string) => Buffer.from(str).toString('base64');

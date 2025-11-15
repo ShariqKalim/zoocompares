@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import { Toaster } from '@/components/ui/toaster';
 
 const SearchBar = dynamic(() => import('@/components/search-bar'), { ssr: false });
 const CategorySection = dynamic(() => import('@/components/category-section'), { ssr: false });
@@ -60,14 +61,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <Toaster />
+      
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-background/80 backdrop-blur border-b border-border' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-            Comparizon
-          </Link>
-          <Link href="/admin" className="text-sm text-muted-foreground hover:text-primary transition-colors opacity-60 hover:opacity-100">
-            Admin
+            zoocompares
           </Link>
         </div>
       </nav>
@@ -115,7 +115,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Why Choose Comparizon?
+              Why Choose zoocompares?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Designed to help you make smarter purchasing decisions
@@ -165,7 +165,7 @@ export default function Home() {
               Trusted by Thousands
             </h2>
             <p className="text-lg text-muted-foreground">
-              See what users love about Comparizon
+              See what users love about zoocompares
             </p>
           </div>
 
@@ -271,7 +271,7 @@ export default function Home() {
           </div>
 
           <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between">
-            <p className="text-sm text-muted-foreground">&copy; 2025 Comparizon. All rights reserved.</p>
+            <p className="text-sm text-muted-foreground">&copy; 2025 zoocompares. All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">Twitter</Link>
               <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">LinkedIn</Link>
