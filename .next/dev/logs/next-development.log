@@ -1,4 +1,437 @@
-[00:00:03.463] Server  LOG      ✓ Ready in 2.3s
-[00:00:09.027] Server  LOG      ○ Compiling /web-hosting ...
-[00:00:12.707] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:19.613] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.295] Server  LOG      ✓ Ready in 2.3s
+[00:00:04.931] Browser ERROR   ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:00:06.352] Server  LOG      ○ Compiling /web-hosting ...
+[00:00:09.470] Server  ERROR    ⨯ ./app/web-hosting/page.tsx:6:14
+Ecmascript file had an error
+  4 | import React from "react";
+  5 |
+> 6 | export const metadata = {
+    |              ^^^^^^^^
+  7 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  8 |   description:
+  9 |     "Compare India's top demat brokers. Explore features, pricing, and expert picks with DigiCompares' smooth and beautiful interface.",
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/web-hosting/page.tsx [Client Component Browser]
+    ./app/web-hosting/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/web-hosting/page.tsx [Client Component SSR]
+    ./app/web-hosting/page.tsx [Server Component]
+
+
+[00:00:13.008] Browser ERROR   uncaughtError: Error: ./app/web-hosting/page.tsx:6:14
+Ecmascript file had an error
+  4 | import React from "react";
+  5 |
+> 6 | export const metadata = {
+    |              ^^^^^^^^
+  7 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  8 |   description:
+  9 |     "Compare India's top demat brokers. Explore features, pricing, and expert picks with DigiCompares' smooth and beautiful interface.",
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/web-hosting/page.tsx [Client Component Browser]
+    ./app/web-hosting/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/web-hosting/page.tsx [Client Component SSR]
+    ./app/web-hosting/page.tsx [Server Component]
+
+
+[00:00:13.710] Browser ERROR   ./app/web-hosting/page.tsx:6:14
+Ecmascript file had an error
+  4 | import React from "react";
+  5 |
+> 6 | export const metadata = {
+    |              ^^^^^^^^
+  7 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  8 |   description:
+  9 |     "Compare India's top demat brokers. Explore features, pricing, and expert picks with DigiCompares' smooth and beautiful interface.",
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./app/web-hosting/page.tsx [Client Component Browser]
+    ./app/web-hosting/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/web-hosting/page.tsx [Client Component SSR]
+    ./app/web-hosting/page.tsx [Server Component]
+[00:00:14.709] Browser ERROR   ./app/web-hosting/page.tsx:6:14
+Ecmascript file had an error
+  4 | import React from "react";
+  5 |
+> 6 | export const metadata = {
+    |              ^^^^^^^^
+  7 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  8 |   description:
+  9 |     "Compare India's top demat brokers. Explore features, pricing, and expert picks with DigiCompares' smooth and beautiful interface.",
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./app/web-hosting/page.tsx [Client Component Browser]
+    ./app/web-hosting/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/web-hosting/page.tsx [Client Component SSR]
+    ./app/web-hosting/page.tsx [Server Component]
+[00:00:14.709] Browser ERROR   ./app/web-hosting/page.tsx:6:14
+Ecmascript file had an error
+  4 | import React from "react";
+  5 |
+> 6 | export const metadata = {
+    |              ^^^^^^^^
+  7 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  8 |   description:
+  9 |     "Compare India's top demat brokers. Explore features, pricing, and expert picks with DigiCompares' smooth and beautiful interface.",
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./app/web-hosting/page.tsx [Client Component Browser]
+    ./app/web-hosting/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/web-hosting/page.tsx [Client Component SSR]
+    ./app/web-hosting/page.tsx [Server Component]
+[00:02:07.710] Browser ERROR   ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:02:12.124] Server  ERROR    ⨯ ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+
+
+
+[00:02:12.503] Browser ERROR   uncaughtError: Error: ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+
+
+
+[00:02:12.699] Browser ERROR   ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:02:12.699] Browser ERROR   ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:02:27.721] Browser ERROR   ./app/web-hosting/page.tsx:7:14
+Ecmascript file had an error
+   5 | import React from "react";
+   6 |
+>  7 | export const metadata = {
+     |              ^^^^^^^^
+   8 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+   9 |   description:
+  10 |     "Compare India's top demat brokers. Explore features, pricing, and expert picks with DigiCompares' smooth and beautiful interface.",
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./app/web-hosting/page.tsx [Client Component Browser]
+    ./app/web-hosting/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/web-hosting/page.tsx [Client Component SSR]
+    ./app/web-hosting/page.tsx [Server Component]
+[00:03:17.711] Browser ERROR   ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:03:22.353] Server  ERROR    ⨯ ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+
+
+
+[00:03:22.626] Browser ERROR   uncaughtError: Error: ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+
+
+
+[00:03:22.795] Browser ERROR   ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:03:22.795] Browser ERROR   ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:03:33.716] Browser ERROR   ./app/web-hosting/page.tsx:4:1
+Ecmascript file had an error
+  2 |
+  3 | import React from "react";
+> 4 | "use client"
+    | ^^^^^^^^^^^^
+  5 | export const metadata = {
+  6 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  7 |   description:
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:03:33.717] Browser ERROR   ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:03:36.926] Server  ERROR    ⨯ ./app/web-hosting/page.tsx:4:1
+Ecmascript file had an error
+  2 |
+  3 | import React from "react";
+> 4 | "use client"
+    | ^^^^^^^^^^^^
+  5 | export const metadata = {
+  6 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  7 |   description:
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+
+
+
+./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+
+
+
+[00:03:37.214] Browser ERROR   uncaughtError: Error: ./app/web-hosting/page.tsx:4:1
+Ecmascript file had an error
+  2 |
+  3 | import React from "react";
+> 4 | "use client"
+    | ^^^^^^^^^^^^
+  5 | export const metadata = {
+  6 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  7 |   description:
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+
+
+[00:03:37.418] Browser ERROR   ./app/web-hosting/page.tsx:4:1
+Ecmascript file had an error
+  2 |
+  3 | import React from "react";
+> 4 | "use client"
+    | ^^^^^^^^^^^^
+  5 | export const metadata = {
+  6 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  7 |   description:
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:03:37.418] Browser ERROR   ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:03:37.418] Browser ERROR   ./app/web-hosting/page.tsx:4:1
+Ecmascript file had an error
+  2 |
+  3 | import React from "react";
+> 4 | "use client"
+    | ^^^^^^^^^^^^
+  5 | export const metadata = {
+  6 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  7 |   description:
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:03:37.418] Browser ERROR   ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:03:39.407] Server  ERROR    ⨯ ./app/web-hosting/page.tsx:4:1
+Ecmascript file had an error
+  2 |
+  3 | import React from "react";
+> 4 | "use client"
+    | ^^^^^^^^^^^^
+  5 | export const metadata = {
+  6 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  7 |   description:
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+
+
+
+./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+
+
+
+[00:03:39.671] Browser ERROR   uncaughtError: Error: ./app/web-hosting/page.tsx:4:1
+Ecmascript file had an error
+  2 |
+  3 | import React from "react";
+> 4 | "use client"
+    | ^^^^^^^^^^^^
+  5 | export const metadata = {
+  6 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  7 |   description:
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+
+
+[00:03:39.874] Browser ERROR   ./app/web-hosting/page.tsx:4:1
+Ecmascript file had an error
+  2 |
+  3 | import React from "react";
+> 4 | "use client"
+    | ^^^^^^^^^^^^
+  5 | export const metadata = {
+  6 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  7 |   description:
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:03:39.874] Browser ERROR   ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:03:39.874] Browser ERROR   ./app/web-hosting/page.tsx:4:1
+Ecmascript file had an error
+  2 |
+  3 | import React from "react";
+> 4 | "use client"
+    | ^^^^^^^^^^^^
+  5 | export const metadata = {
+  6 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  7 |   description:
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:03:39.874] Browser ERROR   ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:04:22.708] Browser ERROR   ./app/web-hosting/page.tsx:4:1
+Ecmascript file had an error
+  2 |
+  3 | import React from "react";
+> 4 | "use client"
+    | ^^^^^^^^^^^^
+  5 | export const metadata = {
+  6 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  7 |   description:
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:04:22.708] Browser ERROR   ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:04:31.103] Browser ERROR   uncaughtError: Error: ./app/web-hosting/page.tsx:4:1
+Ecmascript file had an error
+  2 |
+  3 | import React from "react";
+> 4 | "use client"
+    | ^^^^^^^^^^^^
+  5 | export const metadata = {
+  6 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  7 |   description:
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+
+
+[00:04:31.280] Browser ERROR   ./app/web-hosting/page.tsx:4:1
+Ecmascript file had an error
+  2 |
+  3 | import React from "react";
+> 4 | "use client"
+    | ^^^^^^^^^^^^
+  5 | export const metadata = {
+  6 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  7 |   description:
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:04:31.280] Browser ERROR   ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:04:31.281] Browser ERROR   ./app/web-hosting/page.tsx:4:1
+Ecmascript file had an error
+  2 |
+  3 | import React from "react";
+> 4 | "use client"
+    | ^^^^^^^^^^^^
+  5 | export const metadata = {
+  6 |   title: "DigiCompares Demat Broker Comparison 2025 — Best Brokers in India",
+  7 |   description:
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:04:31.281] Browser ERROR   ./app/web-hosting
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:06:02.024] Server  LOG      ✓ Compiled in 1820ms
+[00:06:02.458] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:11.548] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:19.044] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:49.926] Server  ERROR    ⨯ ./app/vpn
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+
+
+
+[00:17:50.052] Browser ERROR   ./app/vpn
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:17:50.543] Browser ERROR   uncaughtError: Error: ./app/vpn
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+
+
+
+[00:17:50.740] Browser ERROR   ./app/vpn
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:17:50.740] Browser ERROR   ./app/vpn
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:24:18.253] Server  LOG      ✓ Compiled in 170ms
+[00:24:21.462] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:33.915] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:37:49.342] Server  LOG      ✓ Compiled in 1129ms
+[00:38:02.821] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\[root-of-the-server]__705f10d4._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:38:02.828] Server  ERROR    ⨯ ReferenceError: index is not defined
+[00:38:03.163] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:38:03.330] Browser ERROR   uncaughtError: ReferenceError: index is not defined
+[00:39:48.818] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:39:48.827] Server  LOG      ✓ Compiled in 210ms
+[00:39:49.827] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:17.264] Server  LOG      ✓ Compiled in 103ms
+[00:41:25.155] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:31.478] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:32.109] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:47.042] Server  LOG      ✓ Compiled in 172ms
+[01:20:12.969] Server  LOG      ✓ Compiled in 953ms
+[01:20:28.210] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:23:16.044] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:23:22.208] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
