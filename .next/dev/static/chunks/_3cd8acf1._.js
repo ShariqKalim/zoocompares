@@ -10,33 +10,63 @@ __turbopack_context__.s([
 ]);
 const DEFAULT_PRODUCTS = [
     {
-        id: 'default_web_hosting',
-        name: 'Web Hosting',
-        description: 'Compare the best web hosting providers for your website',
-        imageUrl: '/web-hosting-concept.png',
-        slug: 'web-hosting',
-        icon: 'Globe',
+        id: 'ai_writing_assistant',
+        name: 'AI Writing Assistant',
+        description: 'Compare the best AI writing tools and assistants for content creation',
+        imageUrl: '/ai-writing.jpg',
+        slug: 'grammarly-ai-assistant',
+        icon: 'FileText',
         colorTheme: 'blue',
         createdAt: '2024-01-01T00:00:00.000Z'
     },
     {
-        id: 'default_vpn',
-        name: 'VPN',
-        description: 'Compare top VPN services for privacy and security',
-        imageUrl: '/vpn-security.jpg',
-        slug: 'vpn',
-        icon: 'Shield',
+        id: 'ai_tools',
+        name: 'AI Tools',
+        description: 'Explore and compare various artificial intelligence tools and platforms',
+        imageUrl: '/ai-tools.jpg',
+        slug: 'ai-tools',
+        icon: 'Brain',
+        colorTheme: 'purple',
+        createdAt: '2024-01-01T00:00:00.000Z'
+    },
+    {
+        id: 'seo_tools',
+        name: 'SEO Tools',
+        description: 'Compare SEO tools for keyword research, ranking tracking, and optimization',
+        imageUrl: '/seo-tools.jpg',
+        slug: 'seo-tools',
+        icon: 'TrendingUp',
         colorTheme: 'green',
         createdAt: '2024-01-01T00:00:00.000Z'
     },
     {
-        id: 'default_demat',
-        name: 'Demat Accounts',
-        description: 'Compare demat accounts and trading platforms',
-        imageUrl: '/trading-accounts.jpg',
-        slug: 'demat-accounts',
-        icon: 'TrendingUp',
-        colorTheme: 'purple',
+        id: 'cloud_workspaces',
+        name: 'Cloud Workspaces',
+        description: 'Compare cloud workspace solutions for remote collaboration and productivity',
+        imageUrl: '/cloud-workspaces.jpg',
+        slug: 'cloud-workspaces',
+        icon: 'Cloud',
+        colorTheme: 'orange',
+        createdAt: '2024-01-01T00:00:00.000Z'
+    },
+    {
+        id: 'vpn_services',
+        name: 'VPN Services',
+        description: 'Compare VPN services for security, privacy, streaming, and global server access',
+        imageUrl: '/vpn-security.jpg',
+        slug: 'vpn',
+        icon: 'Shield',
+        colorTheme: 'indigo',
+        createdAt: '2024-01-01T00:00:00.000Z'
+    },
+    {
+        id: 'web_hosting',
+        name: 'Web Hosting',
+        description: 'Compare web hosting providers for speed, reliability, support, and pricing plans',
+        imageUrl: '/web-hosting.jpg',
+        slug: 'web-hosting',
+        icon: 'Server',
+        colorTheme: 'teal',
         createdAt: '2024-01-01T00:00:00.000Z'
     }
 ];
@@ -85,19 +115,21 @@ function SearchBar() {
             setProducts((0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$product$2d$storage$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getProducts"])());
         }
     }["SearchBar.useEffect"], []);
-    // Generate suggestions based on query
+    // Generate suggestions based on query - FIXED: No default suggestions
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "SearchBar.useEffect": ()=>{
             if (products.length === 0) return;
             if (query.trim() === '') {
-                setSuggestions(products);
-                setIsOpen(true);
+                // Show NO suggestions when query is empty
+                setSuggestions([]);
+                setIsOpen(false);
             } else {
+                // Only show suggestions when user types
                 const filtered = products.filter({
-                    "SearchBar.useEffect.filtered": (product)=>product.name.toLowerCase().includes(query.toLowerCase())
+                    "SearchBar.useEffect.filtered": (product)=>product.name.toLowerCase().includes(query.toLowerCase()) || product.description && product.description.toLowerCase().includes(query.toLowerCase()) || product.category && product.category.toLowerCase().includes(query.toLowerCase())
                 }["SearchBar.useEffect.filtered"]);
                 setSuggestions(filtered.slice(0, 6));
-                setIsOpen(filtered.length > 0);
+                setIsOpen(filtered.length > 0 && query.trim().length > 0);
             }
         }
     }["SearchBar.useEffect"], [
@@ -126,8 +158,25 @@ function SearchBar() {
         setIsOpen(false);
     };
     const handleKeyDown = (e)=>{
-        if (e.key === 'Enter' && suggestions.length > 0) {
-            handleSearch(suggestions[0]);
+        if (e.key === 'Enter' && query.trim()) {
+            // Navigate to search results page on Enter
+            router.push(`/search/${encodeURIComponent(query.trim())}`);
+            setQuery('');
+            setIsOpen(false);
+        }
+    };
+    const handleInputChange = (e)=>{
+        const value = e.target.value;
+        setQuery(value);
+        // Only open dropdown if there's actual text
+        if (value.trim() === '') {
+            setIsOpen(false);
+        }
+    };
+    const handleInputFocus = ()=>{
+        // Only open dropdown if there are suggestions (user has typed something)
+        if (query.trim() !== '' && suggestions.length > 0) {
+            setIsOpen(true);
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -143,98 +192,168 @@ function SearchBar() {
                             className: "w-5 h-5"
                         }, void 0, false, {
                             fileName: "[project]/components/search-bar.tsx",
-                            lineNumber: 70,
+                            lineNumber: 95,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/search-bar.tsx",
-                        lineNumber: 69,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                         type: "text",
                         value: query,
-                        onChange: (e)=>setQuery(e.target.value),
+                        onChange: handleInputChange,
                         onKeyDown: handleKeyDown,
-                        onFocus: ()=>setIsOpen(true),
+                        onFocus: handleInputFocus,
                         placeholder: "Compare laptops, phones, services...",
                         className: "w-full pl-12 pr-4 py-4 rounded-full border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all shadow-sm"
                     }, void 0, false, {
                         fileName: "[project]/components/search-bar.tsx",
-                        lineNumber: 72,
+                        lineNumber: 97,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/search-bar.tsx",
-                lineNumber: 68,
+                lineNumber: 93,
                 columnNumber: 7
             }, this),
-            isClient && isOpen && suggestions.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            isClient && isOpen && query.trim() !== '' && suggestions.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute top-full mt-3 w-full bg-background border border-border rounded-lg shadow-lg z-10 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                    className: "py-2",
-                    children: suggestions.map((product)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>handleSearch(product),
-                                className: "w-full text-left px-4 py-3 hover:bg-muted flex items-center gap-3 transition-colors",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
-                                        className: "w-4 h-4 text-muted-foreground flex-shrink-0"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/search-bar.tsx",
-                                        lineNumber: 93,
-                                        columnNumber: 19
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-foreground text-sm font-medium",
-                                                children: product.name
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/search-bar.tsx",
-                                                lineNumber: 95,
-                                                columnNumber: 21
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-muted-foreground text-xs line-clamp-1",
-                                                children: product.description
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/search-bar.tsx",
-                                                lineNumber: 96,
-                                                columnNumber: 21
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/search-bar.tsx",
-                                        lineNumber: 94,
-                                        columnNumber: 19
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "px-4 py-2 text-xs font-medium text-muted-foreground border-b border-border",
+                        children: "Search Results"
+                    }, void 0, false, {
+                        fileName: "[project]/components/search-bar.tsx",
+                        lineNumber: 111,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                        className: "py-2",
+                        children: suggestions.map((product)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>handleSearch(product),
+                                    className: "w-full text-left px-4 py-3 hover:bg-muted flex items-center gap-3 transition-colors",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
+                                            className: "w-4 h-4 text-muted-foreground flex-shrink-0"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/search-bar.tsx",
+                                            lineNumber: 121,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "text-foreground text-sm font-medium",
+                                                    children: product.name
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/search-bar.tsx",
+                                                    lineNumber: 123,
+                                                    columnNumber: 21
+                                                }, this),
+                                                product.description && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "text-muted-foreground text-xs line-clamp-1",
+                                                    children: product.description
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/search-bar.tsx",
+                                                    lineNumber: 125,
+                                                    columnNumber: 23
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/search-bar.tsx",
+                                            lineNumber: 122,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/search-bar.tsx",
+                                    lineNumber: 117,
+                                    columnNumber: 17
+                                }, this)
+                            }, product.id, false, {
                                 fileName: "[project]/components/search-bar.tsx",
-                                lineNumber: 89,
-                                columnNumber: 17
-                            }, this)
-                        }, product.id, false, {
+                                lineNumber: 116,
+                                columnNumber: 15
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/components/search-bar.tsx",
+                        lineNumber: 114,
+                        columnNumber: 11
+                    }, this),
+                    suggestions.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "px-4 py-2 border-t border-border",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: ()=>{
+                                router.push(`/search/${encodeURIComponent(query.trim())}`);
+                                setQuery('');
+                                setIsOpen(false);
+                            },
+                            className: "w-full text-center text-sm text-primary hover:text-primary/80 font-medium py-2",
+                            children: [
+                                'View all results for "',
+                                query,
+                                '"'
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/components/search-bar.tsx",
-                            lineNumber: 88,
+                            lineNumber: 134,
                             columnNumber: 15
-                        }, this))
-                }, void 0, false, {
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/search-bar.tsx",
+                        lineNumber: 133,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/search-bar.tsx",
+                lineNumber: 110,
+                columnNumber: 9
+            }, this),
+            isClient && isOpen && query.trim() !== '' && suggestions.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute top-full mt-3 w-full bg-background border border-border rounded-lg shadow-lg z-10 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "px-4 py-4 text-center",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "text-muted-foreground text-sm",
+                            children: [
+                                'No results found for "',
+                                query,
+                                '"'
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/search-bar.tsx",
+                            lineNumber: 153,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "text-xs text-muted-foreground mt-1",
+                            children: "Try different keywords"
+                        }, void 0, false, {
+                            fileName: "[project]/components/search-bar.tsx",
+                            lineNumber: 156,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/components/search-bar.tsx",
-                    lineNumber: 86,
+                    lineNumber: 152,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/search-bar.tsx",
-                lineNumber: 85,
+                lineNumber: 151,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/search-bar.tsx",
-        lineNumber: 67,
+        lineNumber: 92,
         columnNumber: 5
     }, this);
 }

@@ -2,8 +2,7 @@
   "[project]/components/category-section.tsx [app-client] (ecmascript, next/dynamic entry)": {
     "id": "[project]/components/category-section.tsx [app-client] (ecmascript, next/dynamic entry)",
     "files": [
-      "static/chunks/node_modules_lucide-react_dist_esm_9943bd6b._.js",
-      "static/chunks/_e1f8141c._.js",
+      "static/chunks/_0d5263b8._.js",
       "static/chunks/components_category-section_tsx_b4a8f5d3._.js"
     ]
   },

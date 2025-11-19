@@ -1,7 +1,8 @@
 {
   "/[slug]/page": "app/[slug]/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/demat-accounts/page": "app/demat-accounts/page.js",
+  "/ai-tools/page": "app/ai-tools/page.js",
+  "/grammarly-ai-assistant/page": "app/grammarly-ai-assistant/page.js",
   "/page": "app/page.js",
   "/vpn/page": "app/vpn/page.js",
   "/web-hosting/page": "app/web-hosting/page.js"

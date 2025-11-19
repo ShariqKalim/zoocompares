@@ -65,24 +65,31 @@ export default function Home() {
       
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-background/80 backdrop-blur border-b border-border' : 'bg-transparent'}`}>
-        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-            zooCompares
+        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+          <Link href="/" className="flex items-center space-x-3">
+            {/* DC Logo */}
+            <div className="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
+              <span className="text-white font-bold text-lg leading-none">DC</span>
+            </div>
+            {/* Brand Name */}
+            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+              DigiCompares
+            </span>
           </Link>
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 md:pt-48 md:pb-32 px-4 relative overflow-hidden">
+      {/* Hero Section - Reduced spacing */}
+      <section className="pt-20 pb-16 md:pt-32 md:pb-24 px-4 relative overflow-hidden flex items-center min-h-[80vh]">
         <div className="absolute inset-0 -z-10 opacity-5">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-8 text-center">
-          <div className="space-y-4">
+        <div className="max-w-4xl mx-auto w-full space-y-8 text-center">
+          <div className="space-y-6">
             <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight">
               Find Your Perfect
-              <span className="block bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent mt-2">
                 Product Match
               </span>
             </h1>
@@ -91,11 +98,11 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="pt-8">
+          <div className="pt-6">
             <SearchBar />
           </div>
 
-          <div className="pt-12 grid grid-cols-3 gap-8 md:gap-12">
+          <div className="pt-10 grid grid-cols-3 gap-8 md:gap-12">
             <StatCard icon="⚡" value="50+" label="Categories" />
             <StatCard icon="🔄" value="1000+" label="Products" />
             <StatCard icon="👥" value="100K+" label="Users" />
@@ -115,7 +122,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Why Choose zoocompares?
+              Why Choose DigiCompares?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Designed to help you make smarter purchasing decisions
@@ -165,7 +172,7 @@ export default function Home() {
               Trusted by Thousands
             </h2>
             <p className="text-lg text-muted-foreground">
-              See what users love about zoocompares
+              See what users love about DigiCompares
             </p>
           </div>
 
@@ -271,8 +278,14 @@ export default function Home() {
           </div>
 
           <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between">
-            <p className="text-sm text-muted-foreground">&copy; 2025 zoocompares. All rights reserved.</p>
-            <div className="flex gap-6 mt-4 md:mt-0">
+            <div className="flex items-center space-x-3 mb-4 md:mb-0">
+              {/* DC Logo in Footer */}
+              <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center shadow-md">
+                <span className="text-white font-bold text-sm leading-none">DC</span>
+              </div>
+              <p className="text-sm text-muted-foreground">&copy; 2025 DigiCompares. All rights reserved.</p>
+            </div>
+            <div className="flex gap-6">
               <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">Twitter</Link>
               <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">LinkedIn</Link>
               <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">GitHub</Link>
