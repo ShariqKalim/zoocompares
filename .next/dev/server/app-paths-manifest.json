@@ -2,8 +2,10 @@
   "/[slug]/page": "app/[slug]/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/ai-tools/page": "app/ai-tools/page.js",
+  "/cloud-workspaces/page": "app/cloud-workspaces/page.js",
   "/grammarly-ai-assistant/page": "app/grammarly-ai-assistant/page.js",
   "/page": "app/page.js",
+  "/seo-tools/page": "app/seo-tools/page.js",
   "/vpn/page": "app/vpn/page.js",
   "/web-hosting/page": "app/web-hosting/page.js"
 }

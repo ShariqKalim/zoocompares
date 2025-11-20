@@ -1,53 +1,182 @@
-[00:00:05.457] Server  LOG      ✓ Ready in 3.4s
-[00:00:08.650] Server  LOG      ○ Compiling / ...
-[00:00:13.748] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:14.326] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:05.858] Server  LOG      ✓ Compiled in 264ms
-[00:06:19.651] Server  LOG      ✓ Compiled in 231ms
-[00:06:25.372] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:33.217] Server  LOG      ○ Compiling /web-hosting ...
-[00:06:38.989] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:51.945] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:35.778] Server  LOG      ✓ Compiled in 219ms
-[00:10:44.461] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:03.356] Server  LOG      ✓ Compiled in 223ms
-[00:11:21.636] Server  LOG      ✓ Compiled in 243ms
-[00:11:28.261] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:41.976] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:33.057] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:41.038] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:04.355] Browser LOG     Affiliate click: grammarly from countdown-banner {"location":"countdown-banner","provider":"grammarly","timestamp":"2025-11-19T19:15:38.176Z"}
-[00:14:51.895] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:18:48.033] Server  LOG      ✓ Compiled in 266ms
-[00:19:02.305] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:19:04.552] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:32:10.412] Server  LOG      ✓ Compiled in 609ms
-[00:32:41.305] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:33:44.976] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:38:33.790] Server  LOG      ✓ Compiled in 407ms
-[00:38:49.335] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:41:52.935] Server  LOG      ✓ Compiled in 310ms
-[00:42:05.065] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:42:28.241] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:45:20.187] Server  LOG      ✓ Compiled in 324ms
-[00:45:27.934] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:48:56.055] Server  LOG      ✓ Compiled in 463ms
-[00:49:53.324] Server  LOG      ✓ Compiled in 134ms
-[00:51:04.144] Server  LOG      ✓ Compiled in 137ms
-[00:51:22.305] Server  LOG      ✓ Compiled in 135ms
-[01:02:45.314] Server  LOG      ✓ Compiled in 151ms
-[01:02:51.272] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:07:17.665] Server  LOG      ✓ Compiled in 154ms
-[01:07:48.856] Server  LOG      ✓ Compiled in 523ms
-[01:09:35.679] Server  LOG      ✓ Compiled in 360ms
-[01:09:42.847] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:10:11.732] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:11:05.505] Server  LOG      ✓ Compiled in 304ms
-[01:11:14.483] Server  LOG      ✓ Compiled in 129ms
-[01:11:25.884] Server  LOG      ✓ Compiled in 177ms
-[01:11:29.809] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:11:49.245] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:12:12.129] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:12:35.447] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:16:58.325] Server  LOG      ✓ Compiled in 525ms
-[01:17:04.801] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.668] Server  LOG      ✓ Ready in 3.9s
+[00:02:05.174] Server  LOG      ○ Compiling / ...
+[00:02:11.622] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:53.312] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:52.485] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:33.759] Server  LOG      ✓ Compiled in 657ms
+[00:32:41.993] Server  LOG      ✓ Compiled in 687ms
+[00:32:42.137] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/web-hosting/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:32:43.411] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:25.951] Server  LOG      ✓ Compiled in 508ms
+[00:50:18.894] Server  LOG      ✓ Compiled in 459ms
+[00:50:18.931] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/web-hosting/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:50:18.943] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/web-hosting/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:50:20.843] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:51.514] Server  LOG      ✓ Compiled in 2.4s
+[00:59:51.955] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/web-hosting/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:59:52.771] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:02.756] Server  LOG      ✓ Compiled in 500ms
+[01:00:02.760] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/web-hosting/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:00:04.524] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:05:15.468] Server  LOG      ✓ Compiled in 367ms
+[01:14:00.672] Server  LOG      ✓ Compiled in 560ms
+[01:14:44.942] Server  LOG      ○ Compiling /cloud-workspaces ...
+[01:14:48.421] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:14:51.028] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'annual')
+[01:19:56.796] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'annual')
+[01:20:03.459] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:24:22.945] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\[root-of-the-server]__bb62b74c._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:24:22.981] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'annual')
+[01:24:23.098] Server  LOG      ✓ Compiled in 600ms
+[01:24:24.645] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:24:27.195] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+Cannot read properties of undefined (reading 'annual')
+[01:24:27.195] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'annual')
+[01:27:03.152] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'annual')
+[01:27:07.871] Server  LOG      ✓ Compiled in 417ms
+[01:27:07.969] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:27:07.971] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:27:10.109] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:27:10.435] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:39:51.697] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.733] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.749] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.762] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.767] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.771] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.777] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.780] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.782] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[01:39:51.795] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.797] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.800] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.801] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.802] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.805] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.809] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.813] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:51.815] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[01:39:52.180] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.183] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.196] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.200] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.211] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.214] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.223] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.232] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.246] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[01:39:52.300] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.305] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.331] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.334] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.350] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.372] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.382] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.397] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:39:52.409] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[01:39:56.164] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/web-hosting/page"
+[01:39:56.888] Server  LOG      ✓ Compiled in 831ms
+[01:40:02.383] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:42:09.879] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:42:25.004] Server  LOG      ✓ Compiled in 359ms
+[01:47:59.187] Server  LOG      ✓ Compiled in 406ms
+[01:47:59.210] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/web-hosting/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:48:00.440] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:48:18.434] Server  LOG      ✓ Compiled in 208ms
+[01:48:18.438] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/web-hosting/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:48:19.852] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:04:44.266] Server  LOG      ✓ Compiled in 186ms
+[02:09:48.438] Server  LOG      ✓ Compiled in 495ms
+[02:11:53.858] Server  LOG      ✓ Compiled in 153ms
+[02:11:54.500] Browser ERROR   ./app/cloud-workspaces/page.tsx:1110:5
+Parsing ecmascript source code failed
+  1108 |
+  1109 | export default CloudWorkspaceComparison;
+> 1110 |     </div>
+       |     ^
+  1111 |   );
+  1112 | };
+  1113 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/cloud-workspaces/page.tsx [Client Component Browser]
+    ./app/cloud-workspaces/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/cloud-workspaces/page.tsx [Client Component SSR]
+    ./app/cloud-workspaces/page.tsx [Server Component]
+[02:11:54.500] Browser ERROR   ./app/cloud-workspaces/page.tsx:1110:6
+Parsing ecmascript source code failed
+  1108 |
+  1109 | export default CloudWorkspaceComparison;
+> 1110 |     </div>
+       |      ^^^^^
+  1111 |   );
+  1112 | };
+  1113 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/cloud-workspaces/page.tsx [Client Component Browser]
+    ./app/cloud-workspaces/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/cloud-workspaces/page.tsx [Client Component SSR]
+    ./app/cloud-workspaces/page.tsx [Server Component]
+[02:11:54.500] Browser ERROR   ./app/cloud-workspaces/page.tsx:1110:5
+Parsing ecmascript source code failed
+  1108 |
+  1109 | export default CloudWorkspaceComparison;
+> 1110 |     </div>
+       |     ^
+  1111 |   );
+  1112 | };
+  1113 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/cloud-workspaces/page.tsx [Client Component Browser]
+    ./app/cloud-workspaces/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/cloud-workspaces/page.tsx [Client Component SSR]
+    ./app/cloud-workspaces/page.tsx [Server Component]
+[02:11:54.500] Browser ERROR   ./app/cloud-workspaces/page.tsx:1110:6
+Parsing ecmascript source code failed
+  1108 |
+  1109 | export default CloudWorkspaceComparison;
+> 1110 |     </div>
+       |      ^^^^^
+  1111 |   );
+  1112 | };
+  1113 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/cloud-workspaces/page.tsx [Client Component Browser]
+    ./app/cloud-workspaces/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/cloud-workspaces/page.tsx [Client Component SSR]
+    ./app/cloud-workspaces/page.tsx [Server Component]
+[02:12:10.607] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:12:53.714] Server  LOG      ✓ Compiled in 185ms
+[02:24:38.718] Server  LOG      ✓ Compiled in 1321ms
+[02:24:38.974] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/seo-tools/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[02:24:40.654] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:27:22.017] Server  LOG      ✓ Compiled in 522ms
+[02:56:27.315] Server  LOG      ✓ Compiled in 850ms
+[02:56:37.939] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:56:42.130] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:56:44.073] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:56:45.709] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
