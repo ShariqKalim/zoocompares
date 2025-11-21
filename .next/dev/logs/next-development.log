@@ -1,182 +1,94 @@
-[00:00:05.668] Server  LOG      ✓ Ready in 3.9s
-[00:02:05.174] Server  LOG      ○ Compiling / ...
-[00:02:11.622] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:53.312] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:17:52.485] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:18:33.759] Server  LOG      ✓ Compiled in 657ms
-[00:32:41.993] Server  LOG      ✓ Compiled in 687ms
-[00:32:42.137] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/web-hosting/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:32:43.411] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:41:25.951] Server  LOG      ✓ Compiled in 508ms
-[00:50:18.894] Server  LOG      ✓ Compiled in 459ms
-[00:50:18.931] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/web-hosting/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:50:18.943] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/web-hosting/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:50:20.843] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:59:51.514] Server  LOG      ✓ Compiled in 2.4s
-[00:59:51.955] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/web-hosting/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:59:52.771] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:00:02.756] Server  LOG      ✓ Compiled in 500ms
-[01:00:02.760] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/web-hosting/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[01:00:04.524] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:05:15.468] Server  LOG      ✓ Compiled in 367ms
-[01:14:00.672] Server  LOG      ✓ Compiled in 560ms
-[01:14:44.942] Server  LOG      ○ Compiling /cloud-workspaces ...
-[01:14:48.421] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:14:51.028] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'annual')
-[01:19:56.796] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'annual')
-[01:20:03.459] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:24:22.945] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\[root-of-the-server]__bb62b74c._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:24:22.981] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'annual')
-[01:24:23.098] Server  LOG      ✓ Compiled in 600ms
-[01:24:24.645] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:24:27.195] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
-
-Cannot read properties of undefined (reading 'annual')
-[01:24:27.195] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'annual')
-[01:27:03.152] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'annual')
-[01:27:07.871] Server  LOG      ✓ Compiled in 417ms
-[01:27:07.969] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:27:07.971] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:27:10.109] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:27:10.435] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:39:51.697] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.733] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.749] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.762] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.767] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.771] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.777] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.780] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.782] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
-[01:39:51.795] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.797] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.800] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.801] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.802] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.805] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.809] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.813] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:51.815] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
-[01:39:52.180] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.183] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.196] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.200] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.211] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.214] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.223] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.232] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.246] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
-[01:39:52.300] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.305] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.331] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.334] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.350] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.372] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.382] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.397] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:39:52.409] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
-[01:39:56.164] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/web-hosting/page"
-[01:39:56.888] Server  LOG      ✓ Compiled in 831ms
-[01:40:02.383] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:42:09.879] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:42:25.004] Server  LOG      ✓ Compiled in 359ms
-[01:47:59.187] Server  LOG      ✓ Compiled in 406ms
-[01:47:59.210] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/web-hosting/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[01:48:00.440] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:48:18.434] Server  LOG      ✓ Compiled in 208ms
-[01:48:18.438] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/web-hosting/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[01:48:19.852] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:04:44.266] Server  LOG      ✓ Compiled in 186ms
-[02:09:48.438] Server  LOG      ✓ Compiled in 495ms
-[02:11:53.858] Server  LOG      ✓ Compiled in 153ms
-[02:11:54.500] Browser ERROR   ./app/cloud-workspaces/page.tsx:1110:5
-Parsing ecmascript source code failed
-  1108 |
-  1109 | export default CloudWorkspaceComparison;
-> 1110 |     </div>
-       |     ^
-  1111 |   );
-  1112 | };
-  1113 |
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./app/cloud-workspaces/page.tsx [Client Component Browser]
-    ./app/cloud-workspaces/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/cloud-workspaces/page.tsx [Client Component SSR]
-    ./app/cloud-workspaces/page.tsx [Server Component]
-[02:11:54.500] Browser ERROR   ./app/cloud-workspaces/page.tsx:1110:6
-Parsing ecmascript source code failed
-  1108 |
-  1109 | export default CloudWorkspaceComparison;
-> 1110 |     </div>
-       |      ^^^^^
-  1111 |   );
-  1112 | };
-  1113 |
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./app/cloud-workspaces/page.tsx [Client Component Browser]
-    ./app/cloud-workspaces/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/cloud-workspaces/page.tsx [Client Component SSR]
-    ./app/cloud-workspaces/page.tsx [Server Component]
-[02:11:54.500] Browser ERROR   ./app/cloud-workspaces/page.tsx:1110:5
-Parsing ecmascript source code failed
-  1108 |
-  1109 | export default CloudWorkspaceComparison;
-> 1110 |     </div>
-       |     ^
-  1111 |   );
-  1112 | };
-  1113 |
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./app/cloud-workspaces/page.tsx [Client Component Browser]
-    ./app/cloud-workspaces/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/cloud-workspaces/page.tsx [Client Component SSR]
-    ./app/cloud-workspaces/page.tsx [Server Component]
-[02:11:54.500] Browser ERROR   ./app/cloud-workspaces/page.tsx:1110:6
-Parsing ecmascript source code failed
-  1108 |
-  1109 | export default CloudWorkspaceComparison;
-> 1110 |     </div>
-       |      ^^^^^
-  1111 |   );
-  1112 | };
-  1113 |
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./app/cloud-workspaces/page.tsx [Client Component Browser]
-    ./app/cloud-workspaces/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/cloud-workspaces/page.tsx [Client Component SSR]
-    ./app/cloud-workspaces/page.tsx [Server Component]
-[02:12:10.607] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:12:53.714] Server  LOG      ✓ Compiled in 185ms
-[02:24:38.718] Server  LOG      ✓ Compiled in 1321ms
-[02:24:38.974] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/seo-tools/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[02:24:40.654] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:27:22.017] Server  LOG      ✓ Compiled in 522ms
-[02:56:27.315] Server  LOG      ✓ Compiled in 850ms
-[02:56:37.939] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:56:42.130] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:56:44.073] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:56:45.709] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.256] Server  LOG      ✓ Ready in 2s
+[00:00:06.362] Server  LOG      ○ Compiling /web-hosting ...
+[00:00:09.547] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:46.271] Server  LOG      ✓ Compiled in 352ms
+[00:15:32.344] Server  LOG      ✓ Compiled in 379ms
+[00:15:37.842] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:48.847] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:50.723] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:18.650] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:20.699] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:14.164] Server  LOG      ✓ Compiled in 344ms
+[00:25:55.143] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:56.679] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:03.092] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:05.429] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:24.876] Server  LOG      ✓ Compiled in 301ms
+[00:29:33.583] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:05.154] Server  LOG      ✓ Compiled in 118ms
+[00:32:54.168] Server  LOG      ✓ Compiled in 341ms
+[00:36:09.047] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:37:34.571] Server  LOG      ✓ Compiled in 323ms
+[00:39:55.558] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:57.280] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:01.888] Server  LOG      ✓ Compiled in 279ms
+[00:44:14.244] Server  LOG      ✓ Compiled in 412ms
+[00:45:02.174] Server  LOG      ✓ Compiled in 188ms
+[00:45:14.739] Server  LOG      ✓ Compiled in 218ms
+[00:45:37.962] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:55.855] Server  LOG      ✓ Compiled in 183ms
+[00:48:20.105] Server  LOG      ✓ Compiled in 325ms
+[00:48:28.199] Server  LOG      ✓ Compiled in 346ms
+[00:48:48.369] Server  LOG      ✓ Compiled in 297ms
+[00:48:57.972] Server  LOG      ✓ Compiled in 239ms
+[00:48:58.350] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.389] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.408] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.442] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.449] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.451] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.460] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.464] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.480] Server  ERROR    ⨯ Error: Cannot access unstable_prefetch.mode on the server. You cannot dot into a client module from a server component. You can only pass the imported name through.
+[00:48:58.498] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.500] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.504] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.509] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.514] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.517] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.524] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.525] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.532] Server  ERROR    ⨯ Error: Cannot access unstable_prefetch.mode on the server. You cannot dot into a client module from a server component. You can only pass the imported name through.
+[00:48:58.804] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.813] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.824] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.841] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.850] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.878] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.895] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.901] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.905] Server  ERROR    ⨯ Error: Cannot access unstable_prefetch.mode on the server. You cannot dot into a client module from a server component. You can only pass the imported name through.
+[00:48:58.931] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.934] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.943] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.945] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.950] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.967] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.971] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.975] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:58.979] Server  ERROR    ⨯ Error: Cannot access unstable_prefetch.mode on the server. You cannot dot into a client module from a server component. You can only pass the imported name through.
+[00:49:01.389] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.390] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.392] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.393] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.394] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.396] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.398] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.399] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.400] Server  ERROR    ⨯ Error: Cannot access unstable_prefetch.mode on the server. You cannot dot into a client module from a server component. You can only pass the imported name through.
+[00:49:01.407] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.408] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.410] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.412] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.413] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.414] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.416] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.417] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:01.419] Server  ERROR    ⨯ Error: Cannot access unstable_prefetch.mode on the server. You cannot dot into a client module from a server component. You can only pass the imported name through.
+[00:49:01.742] Browser ERROR   uncaughtError: Error: Cannot access unstable_prefetch.mode on the server. You cannot dot into a client module from a server component. You can only pass the imported name through.
+[00:49:18.651] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:49:28.272] Server  LOG      ✓ Compiled in 165ms
+[00:49:43.686] Server  LOG      ✓ Compiled in 167ms
+[00:49:54.780] Server  LOG      ✓ Compiled in 340ms
+[00:50:46.316] Server  LOG      ✓ Compiled in 395ms
+[00:51:00.884] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

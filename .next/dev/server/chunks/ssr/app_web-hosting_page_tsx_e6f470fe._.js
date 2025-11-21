@@ -1,5 +1,5 @@
-(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
-"[project]/app/web-hosting/page.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+module.exports = [
+"[project]/app/web-hosting/page.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 // // // // // 'use client';
@@ -5401,16 +5401,8 @@
 //     </div>
 //   );
 // }
-__turbopack_context__.s([
-    "default",
-    ()=>ProfessionalHostingComparison
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-;
-var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature();
-'use client';
-;
+import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
+import { useState, useRef, useEffect } from 'react';
 // Affiliate URLs - Updated to use main hostinger.com
 const HOSTINGER_AFFILIATE = "https://www.hostinger.com/";
 const BLUEHOST_AFFILIATE = "https://www.bluehost.com/track/digicompares/";
@@ -5438,7 +5430,7 @@ const hostingProviders = [
         freeSSL: true,
         emailAccounts: "1 Account",
         backup: "Weekly + On-demand",
-        support: "24/7 Live Chat + Priority Support",
+        support: "24/7 Live Chat + AI Support",
         moneyBack: "30 Days",
         performance: "Excellent (160ms)",
         security: "Free SSL, Cloudflare, WAF",
@@ -5446,11 +5438,12 @@ const hostingProviders = [
             "Beginners",
             "Small Business",
             "Portfolio Sites",
-            "Startups"
+            "Startups",
+            "AI Websites"
         ],
         features: [
             "LiteSpeed Web Server with LSCache",
-            "Website Builder & Tools",
+            "AI Website Builder & Content Generator",
             "WordPress Optimized with Auto-updates",
             "Free CDN Integration (100+ Locations)",
             "8 Global Data Centers",
@@ -5458,19 +5451,19 @@ const hostingProviders = [
             "Git Integration & SSH Access",
             "WP-CLI & Staging Environment",
             "Free Email & Business Suite",
-            "Security Monitoring",
+            "AI Security Monitoring",
             "Free Domain for 1st Year",
             "E-commerce Ready (WooCommerce)"
         ],
         pros: [
             "Fastest loading times with 160ms average response time",
-            "User-friendly hPanel for easy management",
+            "Revolutionary AI-powered hPanel for effortless management",
             "8 global data centers with edge computing capabilities",
             "Best value with premium features at budget pricing",
             "99.99% uptime guarantee with SLA-backed reliability",
-            "Free domain name, SSL, and website builder included",
+            "Free domain name, SSL, and AI website builder included",
             "One-click WordPress installation with auto-optimization",
-            "24/7 priority support with quick response times"
+            "24/7 AI-powered support with human escalation"
         ],
         cons: [
             "Basic plan limited to single website",
@@ -5489,9 +5482,15 @@ const hostingProviders = [
         specialOffers: [
             "Free domain worth $15.99",
             "Free SSL certificate worth $90",
-            "Free website builder",
+            "Free AI website builder",
             "Free email hosting with 1GB storage",
             "Free website migration service"
+        ],
+        aiFeatures: [
+            "AI Content Generator",
+            "AI Security Scanner",
+            "AI Performance Optimizer",
+            "AI SEO Assistant"
         ]
     },
     {
@@ -5537,7 +5536,8 @@ const hostingProviders = [
         cons: [
             "Significant price increase on renewal (over 370%)",
             "Aggressive upselling during checkout process",
-            "Limited storage on basic plan compared to competitors"
+            "Limited storage on basic plan compared to competitors",
+            "No AI features included"
         ],
         performanceMetrics: {
             uptime: "99.97%",
@@ -5570,7 +5570,7 @@ const hostingProviders = [
         support: "24/7 Expert Support",
         moneyBack: "30 Days",
         performance: "Excellent (175ms)",
-        security: "Advanced Security, WAF",
+        security: "AI Anti-Bots, WAF",
         idealFor: [
             "Growing Business",
             "E-commerce",
@@ -5586,14 +5586,15 @@ const hostingProviders = [
         ],
         pros: [
             "Top-tier customer support with expert technicians",
-            "Advanced security features including anti-bot system",
+            "Advanced security features including AI anti-bot system",
             "Excellent performance for WooCommerce and e-commerce sites",
             "Google Cloud infrastructure ensures reliability"
         ],
         cons: [
             "Very limited storage space on entry-level plans",
             "Highest renewal prices among competitors",
-            "No free domain registration on initial plan"
+            "No free domain registration on initial plan",
+            "Limited AI capabilities"
         ],
         performanceMetrics: {
             uptime: "99.99%",
@@ -5649,6 +5650,7 @@ const hostingProviders = [
         cons: [
             "Turbo servers require additional cost",
             "Control panel less beginner-friendly than competitors",
+            "Limited AI and automation features",
             "Fewer data center locations than top providers"
         ],
         performanceMetrics: {
@@ -5705,7 +5707,8 @@ const hostingProviders = [
         cons: [
             "Higher starting price point than shared hosting",
             "More technical setup required for beginners",
-            "Email hosting not included (additional cost)"
+            "Email hosting not included (additional cost)",
+            "Limited AI features compared to Hostinger"
         ],
         performanceMetrics: {
             uptime: "99.99%",
@@ -5870,29 +5873,34 @@ const comparisonFeatures = [
         name: "Support Rating",
         key: "performanceMetrics.supportRating",
         important: true
+    },
+    {
+        name: "AI Features",
+        key: "aiFeatures",
+        important: true
     }
 ];
 // FAQ Data - UPDATED FOR 2025
 const faqData = [
     {
         question: "Why is Hostinger ranked #1 for 2025?",
-        answer: "Hostinger earns our top spot due to its exceptional performance (160ms response times), unbeatable value at $1.99/month, and comprehensive feature set. With 8 global data centers, 200GB NVMe storage, and user-friendly tools, it represents the best choice for 2025. Their 99.99% uptime and 4.9/5 support rating make it the clear winner."
+        answer: "Hostinger earns our top spot due to its revolutionary AI-powered features, exceptional performance (160ms response times), and unbeatable value at $1.99/month. With 8 global data centers, 200GB NVMe storage, and comprehensive AI tools including content generation and security, it represents the future of web hosting. Their 99.99% uptime and 4.9/5 support rating make it the clear winner for 2025."
     },
     {
-        question: "What makes Hostinger stand out in 2025?",
-        answer: "Hostinger stands out with its combination of premium features at budget pricing, including 200GB NVMe storage, 8 global data centers, LiteSpeed servers, and comprehensive security features. The $1.99/month introductory price with 85% discount makes it the most aggressive pricing in the hosting industry for 2025."
+        question: "What makes Hostinger's AI features special in 2025?",
+        answer: "Hostinger has integrated advanced AI across their platform: AI Content Generator for automatic website content creation, AI Security Scanner for real-time threat detection, AI Performance Optimizer for automatic speed enhancements, and AI SEO Assistant for search engine optimization. These features, combined with their AI-powered hPanel, make website management incredibly intuitive and efficient."
     },
     {
         question: "Is the $1.99 Hostinger price really sustainable?",
-        answer: "Yes, Hostinger's $1.99/month pricing is part of their 2025 introductory offer. While renewal prices increase to $5.99/month, this still represents exceptional value given the premium features included: 200GB NVMe storage, 8 data centers, and enterprise-grade security. The 85% discount makes it the most competitive pricing available."
+        answer: "Yes, Hostinger's $1.99/month pricing is part of their 2025 introductory offer. While renewal prices increase to $5.99/month, this still represents exceptional value given the premium features included: 200GB NVMe storage, AI tools, 8 data centers, and enterprise-grade security. The 85% discount makes it the most aggressive pricing in the hosting industry for 2025."
     },
     {
         question: "How does Hostinger compare to premium hosts like WP Engine?",
-        answer: "While WP Engine excels for enterprise WordPress sites, Hostinger provides excellent performance at a fraction of the cost. With 160ms vs 130ms response times and similar uptime guarantees, Hostinger delivers premium performance for small to medium businesses. The comprehensive toolset makes it more feature-rich than many premium hosts."
+        answer: "While WP Engine excels for enterprise WordPress sites, Hostinger provides 90% of the performance at 20% of the cost. With 160ms vs 130ms response times and similar uptime guarantees, Hostinger delivers premium performance for small to medium businesses. The included AI features and comprehensive toolset make it more feature-rich than many premium hosts."
     },
     {
         question: "What are the key hosting trends for 2025?",
-        answer: "2025 hosting is defined by: 1) NVMe storage becoming standard, 2) Edge computing with global CDNs, 3) Enhanced security features, 4) Better performance optimization, and 5) More user-friendly control panels. Hostinger leads in all these areas with their 2025 platform updates."
+        answer: "2025 hosting is defined by: 1) AI integration across all platforms, 2) NVMe storage becoming standard, 3) Edge computing with global CDNs, 4) Enhanced security with AI threat detection, and 5) Sustainable hosting practices. Hostinger leads in all these areas with their 2025 platform updates."
     },
     {
         question: "Can I upgrade my Hostinger plan later?",
@@ -5968,208 +5976,195 @@ const performanceData = {
 };
 // Countdown Timer Component
 const CountdownTimer = ()=>{
-    _s();
-    const [timeLeft, setTimeLeft] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
+    const [timeLeft, setTimeLeft] = useState({
         hours: 23,
         minutes: 59,
         seconds: 59
     });
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "CountdownTimer.useEffect": ()=>{
-            const timer = setInterval({
-                "CountdownTimer.useEffect.timer": ()=>{
-                    setTimeLeft({
-                        "CountdownTimer.useEffect.timer": (prev)=>{
-                            if (prev.seconds > 0) {
-                                return {
-                                    ...prev,
-                                    seconds: prev.seconds - 1
-                                };
-                            } else if (prev.minutes > 0) {
-                                return {
-                                    ...prev,
-                                    minutes: prev.minutes - 1,
-                                    seconds: 59
-                                };
-                            } else if (prev.hours > 0) {
-                                return {
-                                    hours: prev.hours - 1,
-                                    minutes: 59,
-                                    seconds: 59
-                                };
-                            } else {
-                                return {
-                                    hours: 23,
-                                    minutes: 59,
-                                    seconds: 59
-                                };
-                            }
-                        }
-                    }["CountdownTimer.useEffect.timer"]);
+    useEffect(()=>{
+        const timer = setInterval(()=>{
+            setTimeLeft((prev)=>{
+                if (prev.seconds > 0) {
+                    return {
+                        ...prev,
+                        seconds: prev.seconds - 1
+                    };
+                } else if (prev.minutes > 0) {
+                    return {
+                        ...prev,
+                        minutes: prev.minutes - 1,
+                        seconds: 59
+                    };
+                } else if (prev.hours > 0) {
+                    return {
+                        hours: prev.hours - 1,
+                        minutes: 59,
+                        seconds: 59
+                    };
+                } else {
+                    return {
+                        hours: 23,
+                        minutes: 59,
+                        seconds: 59
+                    };
                 }
-            }["CountdownTimer.useEffect.timer"], 1000);
-            return ({
-                "CountdownTimer.useEffect": ()=>clearInterval(timer)
-            })["CountdownTimer.useEffect"];
-        }
-    }["CountdownTimer.useEffect"], []);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            });
+        }, 1000);
+        return ()=>clearInterval(timer);
+    }, []);
+    return /*#__PURE__*/ _jsxDEV("div", {
         className: "flex items-center gap-2 bg-white/20 px-3 py-2 rounded-lg",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            /*#__PURE__*/ _jsxDEV("span", {
                 className: "text-white font-bold text-sm",
                 children: "Offer ends in:"
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6174,
+                lineNumber: 6186,
                 columnNumber: 7
-            }, ("TURBOPACK compile-time value", void 0)),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            }, this),
+            /*#__PURE__*/ _jsxDEV("div", {
                 className: "flex gap-1",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    /*#__PURE__*/ _jsxDEV("div", {
                         className: "bg-white/20 px-2 py-1 rounded text-white font-mono text-sm font-bold",
                         children: String(timeLeft.hours).padStart(2, '0')
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6176,
+                        lineNumber: 6188,
                         columnNumber: 9
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    }, this),
+                    /*#__PURE__*/ _jsxDEV("span", {
                         className: "text-white",
                         children: ":"
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6179,
+                        lineNumber: 6191,
                         columnNumber: 9
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    }, this),
+                    /*#__PURE__*/ _jsxDEV("div", {
                         className: "bg-white/20 px-2 py-1 rounded text-white font-mono text-sm font-bold",
                         children: String(timeLeft.minutes).padStart(2, '0')
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6180,
+                        lineNumber: 6192,
                         columnNumber: 9
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    }, this),
+                    /*#__PURE__*/ _jsxDEV("span", {
                         className: "text-white",
                         children: ":"
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6183,
+                        lineNumber: 6195,
                         columnNumber: 9
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    }, this),
+                    /*#__PURE__*/ _jsxDEV("div", {
                         className: "bg-white/20 px-2 py-1 rounded text-white font-mono text-sm font-bold",
                         children: String(timeLeft.seconds).padStart(2, '0')
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6184,
+                        lineNumber: 6196,
                         columnNumber: 9
-                    }, ("TURBOPACK compile-time value", void 0))
+                    }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6175,
+                lineNumber: 6187,
                 columnNumber: 7
-            }, ("TURBOPACK compile-time value", void 0))
+            }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/web-hosting/page.tsx",
-        lineNumber: 6173,
+        lineNumber: 6185,
         columnNumber: 5
-    }, ("TURBOPACK compile-time value", void 0));
+    }, this);
 };
-_s(CountdownTimer, "dAgKV2giqLUOoKsPCTyYGeaGd78=");
-_c = CountdownTimer;
-const TrustBadge = ({ icon, text, subtext })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+const TrustBadge = ({ icon, text, subtext })=>/*#__PURE__*/ _jsxDEV("div", {
         className: "flex items-center gap-4 p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            /*#__PURE__*/ _jsxDEV("div", {
                 className: "text-2xl",
                 children: icon
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6194,
+                lineNumber: 6206,
                 columnNumber: 5
-            }, ("TURBOPACK compile-time value", void 0)),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            }, this),
+            /*#__PURE__*/ _jsxDEV("div", {
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    /*#__PURE__*/ _jsxDEV("p", {
                         className: "font-bold text-gray-900 text-sm",
                         children: text
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6196,
+                        lineNumber: 6208,
                         columnNumber: 7
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    }, this),
+                    /*#__PURE__*/ _jsxDEV("p", {
                         className: "text-gray-600 text-xs",
                         children: subtext
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6197,
+                        lineNumber: 6209,
                         columnNumber: 7
-                    }, ("TURBOPACK compile-time value", void 0))
+                    }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6195,
+                lineNumber: 6207,
                 columnNumber: 5
-            }, ("TURBOPACK compile-time value", void 0))
+            }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/web-hosting/page.tsx",
-        lineNumber: 6193,
+        lineNumber: 6205,
         columnNumber: 3
-    }, ("TURBOPACK compile-time value", void 0));
-_c1 = TrustBadge;
+    }, this);
 const PerformanceBar = ({ provider, time, maxTime, color, isUptime = false })=>{
     const percentage = time / maxTime * 100;
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    return /*#__PURE__*/ _jsxDEV("div", {
         className: "flex items-center gap-3 sm:gap-4 py-2 sm:py-3",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            /*#__PURE__*/ _jsxDEV("span", {
                 className: "w-20 sm:w-32 font-semibold text-gray-900 text-sm sm:text-base",
                 children: provider
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6207,
+                lineNumber: 6219,
                 columnNumber: 7
-            }, ("TURBOPACK compile-time value", void 0)),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            }, this),
+            /*#__PURE__*/ _jsxDEV("div", {
                 className: "flex-1 bg-gray-200 rounded-full h-3 sm:h-4",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: /*#__PURE__*/ _jsxDEV("div", {
                     className: `h-3 sm:h-4 rounded-full bg-gradient-to-r ${color} transition-all duration-1000 ease-out`,
                     style: {
                         width: `${isUptime ? (time - 99) * 100 : percentage}%`
                     }
                 }, void 0, false, {
                     fileName: "[project]/app/web-hosting/page.tsx",
-                    lineNumber: 6209,
+                    lineNumber: 6221,
                     columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0))
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6208,
+                lineNumber: 6220,
                 columnNumber: 7
-            }, ("TURBOPACK compile-time value", void 0)),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            }, this),
+            /*#__PURE__*/ _jsxDEV("span", {
                 className: "w-16 sm:w-20 text-right font-bold text-gray-900 text-sm sm:text-base",
                 children: isUptime ? `${time}%` : `${time}ms`
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6214,
+                lineNumber: 6226,
                 columnNumber: 7
-            }, ("TURBOPACK compile-time value", void 0))
+            }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/web-hosting/page.tsx",
-        lineNumber: 6206,
+        lineNumber: 6218,
         columnNumber: 5
-    }, ("TURBOPACK compile-time value", void 0));
+    }, this);
 };
-_c2 = PerformanceBar;
 const FeatureRow = ({ feature, providers })=>{
     const getFeatureValue = (provider, key)=>{
         if (key.includes('.')) {
@@ -6180,20 +6175,20 @@ const FeatureRow = ({ feature, providers })=>{
     };
     const renderValue = (value, provider)=>{
         if (Array.isArray(value)) {
-            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            return /*#__PURE__*/ _jsxDEV("div", {
                 className: "text-xs text-gray-600 text-left",
                 children: [
-                    value.slice(0, 2).map((item, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    value.slice(0, 2).map((item, idx)=>/*#__PURE__*/ _jsxDEV("div", {
                             children: [
                                 "• ",
                                 item
                             ]
                         }, idx, true, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6235,
+                            lineNumber: 6247,
                             columnNumber: 13
-                        }, ("TURBOPACK compile-time value", void 0))),
-                    value.length > 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        }, this)),
+                    value.length > 2 && /*#__PURE__*/ _jsxDEV("div", {
                         children: [
                             "+",
                             value.length - 2,
@@ -6201,166 +6196,162 @@ const FeatureRow = ({ feature, providers })=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6237,
+                        lineNumber: 6249,
                         columnNumber: 32
-                    }, ("TURBOPACK compile-time value", void 0))
+                    }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6233,
+                lineNumber: 6245,
                 columnNumber: 9
-            }, ("TURBOPACK compile-time value", void 0));
+            }, this);
         }
         if (typeof value === 'boolean') {
-            return value ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            return value ? /*#__PURE__*/ _jsxDEV("span", {
                 className: "text-green-600 font-bold text-sm",
                 children: "✅ Yes"
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6244,
+                lineNumber: 6256,
                 columnNumber: 9
-            }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            }, this) : /*#__PURE__*/ _jsxDEV("span", {
                 className: "text-red-600 font-bold text-sm",
                 children: "❌ No"
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6246,
+                lineNumber: 6258,
                 columnNumber: 9
-            }, ("TURBOPACK compile-time value", void 0));
+            }, this);
         }
-        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+        return /*#__PURE__*/ _jsxDEV("span", {
             className: `font-semibold ${provider.rank === 1 ? 'text-green-700 text-sm' : 'text-gray-700'}`,
             children: value
         }, void 0, false, {
             fileName: "[project]/app/web-hosting/page.tsx",
-            lineNumber: 6251,
+            lineNumber: 6263,
             columnNumber: 7
-        }, ("TURBOPACK compile-time value", void 0));
+        }, this);
     };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+    return /*#__PURE__*/ _jsxDEV("tr", {
         className: "border-b border-gray-200 hover:bg-gray-50/50 transition-colors duration-200",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+            /*#__PURE__*/ _jsxDEV("td", {
                 className: "px-4 sm:px-6 py-4 font-semibold text-gray-900 bg-gray-50/80 text-sm sm:text-lg",
                 children: [
                     feature.name,
-                    feature.important && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    feature.important && /*#__PURE__*/ _jsxDEV("span", {
                         className: "ml-2 text-red-500",
                         children: "*"
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6261,
+                        lineNumber: 6273,
                         columnNumber: 31
-                    }, ("TURBOPACK compile-time value", void 0))
+                    }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6259,
+                lineNumber: 6271,
                 columnNumber: 7
-            }, ("TURBOPACK compile-time value", void 0)),
+            }, this),
             providers.map((provider)=>{
                 const value = getFeatureValue(provider, feature.key);
-                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                return /*#__PURE__*/ _jsxDEV("td", {
                     className: `px-2 sm:px-4 py-4 text-center ${provider.rank === 1 ? 'bg-green-50/50' : ''}`,
                     children: renderValue(value, provider)
                 }, provider.id, false, {
                     fileName: "[project]/app/web-hosting/page.tsx",
-                    lineNumber: 6266,
+                    lineNumber: 6278,
                     columnNumber: 11
-                }, ("TURBOPACK compile-time value", void 0));
+                }, this);
             })
         ]
     }, void 0, true, {
         fileName: "[project]/app/web-hosting/page.tsx",
-        lineNumber: 6258,
+        lineNumber: 6270,
         columnNumber: 5
-    }, ("TURBOPACK compile-time value", void 0));
+    }, this);
 };
-_c3 = FeatureRow;
-const FAQItem = ({ question, answer, isOpen, onClick })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+const FAQItem = ({ question, answer, isOpen, onClick })=>/*#__PURE__*/ _jsxDEV("div", {
         className: "border-b border-gray-200 last:border-b-0",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+            /*#__PURE__*/ _jsxDEV("button", {
                 onClick: onClick,
                 className: "flex items-center justify-between w-full py-4 sm:py-6 text-left hover:bg-gray-50/50 px-4 rounded-lg transition-colors",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                    /*#__PURE__*/ _jsxDEV("h4", {
                         className: "text-lg sm:text-xl font-semibold text-gray-900 pr-4 sm:pr-8",
                         children: question
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6281,
+                        lineNumber: 6293,
                         columnNumber: 7
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    }, this),
+                    /*#__PURE__*/ _jsxDEV("span", {
                         className: "text-xl sm:text-2xl text-green-600 flex-shrink-0",
                         children: isOpen ? '−' : '+'
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6282,
+                        lineNumber: 6294,
                         columnNumber: 7
-                    }, ("TURBOPACK compile-time value", void 0))
+                    }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6277,
+                lineNumber: 6289,
                 columnNumber: 5
-            }, ("TURBOPACK compile-time value", void 0)),
-            isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            }, this),
+            isOpen && /*#__PURE__*/ _jsxDEV("div", {
                 className: "pb-4 sm:pb-6 px-4",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                children: /*#__PURE__*/ _jsxDEV("p", {
                     className: "text-gray-700 leading-relaxed text-sm sm:text-lg",
                     children: answer
                 }, void 0, false, {
                     fileName: "[project]/app/web-hosting/page.tsx",
-                    lineNumber: 6288,
+                    lineNumber: 6300,
                     columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0))
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6287,
+                lineNumber: 6299,
                 columnNumber: 7
-            }, ("TURBOPACK compile-time value", void 0))
+            }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/web-hosting/page.tsx",
-        lineNumber: 6276,
+        lineNumber: 6288,
         columnNumber: 3
-    }, ("TURBOPACK compile-time value", void 0));
-_c4 = FAQItem;
-// Enhanced Coupon Button Component with better colors
+    }, this);
+// Enhanced Coupon Button Component
 const CouponButton = ({ size = "medium", className = "" })=>{
     const sizes = {
         small: "px-4 py-2 text-sm",
         medium: "px-6 py-3 text-base",
         large: "px-8 py-4 text-lg"
     };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+    return /*#__PURE__*/ _jsxDEV("a", {
         href: "/coupons",
-        className: `inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-600 text-white font-bold rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-purple-400 shadow-lg hover:from-purple-600 hover:to-pink-700 ${sizes[size]} ${className}`,
+        className: `inline-flex items-center gap-2 bg-gradient-to-r from-amber-400 to-yellow-300 text-gray-900 font-bold rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-yellow-300 shadow-lg hover:from-yellow-300 hover:to-amber-400 ${sizes[size]} ${className}`,
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            /*#__PURE__*/ _jsxDEV("span", {
                 className: "text-lg",
                 children: "🎫"
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6307,
+                lineNumber: 6319,
                 columnNumber: 7
-            }, ("TURBOPACK compile-time value", void 0)),
+            }, this),
             "GET COUPON CODE"
         ]
     }, void 0, true, {
         fileName: "[project]/app/web-hosting/page.tsx",
-        lineNumber: 6303,
+        lineNumber: 6315,
         columnNumber: 5
-    }, ("TURBOPACK compile-time value", void 0));
+    }, this);
 };
-_c5 = CouponButton;
-function ProfessionalHostingComparison() {
-    _s1();
-    const [openFAQ, setOpenFAQ] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
-    const [visibleProviders, setVisibleProviders] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(4);
-    const tableRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+export default function ProfessionalHostingComparison() {
+    const [openFAQ, setOpenFAQ] = useState(0);
+    const [visibleProviders, setVisibleProviders] = useState(4);
+    const tableRef = useRef(null);
     const scrollToTable = ()=>{
         tableRef.current?.scrollIntoView({
             behavior: 'smooth'
@@ -6374,85 +6365,53 @@ function ProfessionalHostingComparison() {
     };
     const maxResponseTime = Math.max(...performanceData.responseTimes.map((p)=>p.time));
     const maxUptime = Math.max(...performanceData.uptime.map((p)=>p.uptime));
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    return /*#__PURE__*/ _jsxDEV("div", {
         className: "min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/20 to-slate-100",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            /*#__PURE__*/ _jsxDEV("div", {
                 className: "bg-gradient-to-r from-red-500 via-pink-600 to-purple-600 py-3 px-4 relative overflow-hidden",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    /*#__PURE__*/ _jsxDEV("div", {
                         className: "max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            /*#__PURE__*/ _jsxDEV("div", {
                                 className: "flex items-center gap-3",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         className: "bg-white/20 p-1 rounded-lg",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: /*#__PURE__*/ _jsxDEV("span", {
                                             className: "text-white text-lg",
                                             children: "🔥"
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6340,
+                                            lineNumber: 6352,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6339,
+                                        lineNumber: 6351,
                                         columnNumber: 13
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            /*#__PURE__*/ _jsxDEV("h3", {
                                                 className: "text-white font-bold text-sm sm:text-base",
-                                                children: "Hostinger 2025 Special - 85% OFF + Free Features!"
+                                                children: "Hostinger 2025 Special - 85% OFF + Free AI Tools!"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6343,
+                                                lineNumber: 6355,
                                                 columnNumber: 15
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            /*#__PURE__*/ _jsxDEV("p", {
                                                 className: "text-white/90 text-xs",
                                                 children: "Limited time: Get Hostinger for $1.99/mo with exclusive coupon"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6346,
+                                                lineNumber: 6358,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6342,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/web-hosting/page.tsx",
-                                lineNumber: 6338,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-4",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CountdownTimer, {}, void 0, false, {
-                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6352,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CouponButton, {
-                                        size: "small"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6353,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: HOSTINGER_AFFILIATE,
-                                        target: "_blank",
-                                        rel: "noopener noreferrer",
-                                        className: "bg-white text-red-600 px-4 py-2 rounded-lg font-bold hover:bg-gray-100 transition-colors text-sm whitespace-nowrap shadow-lg",
-                                        children: "Claim Offer →"
-                                    }, void 0, false, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
                                         lineNumber: 6354,
                                         columnNumber: 13
@@ -6460,946 +6419,877 @@ function ProfessionalHostingComparison() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                lineNumber: 6351,
+                                lineNumber: 6350,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ _jsxDEV("div", {
+                                className: "flex items-center gap-4",
+                                children: [
+                                    /*#__PURE__*/ _jsxDEV(CountdownTimer, {}, void 0, false, {
+                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                        lineNumber: 6364,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ _jsxDEV(CouponButton, {
+                                        size: "small"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                        lineNumber: 6365,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ _jsxDEV("a", {
+                                        href: HOSTINGER_AFFILIATE,
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        className: "bg-white text-red-600 px-4 py-2 rounded-lg font-bold hover:bg-gray-100 transition-colors text-sm whitespace-nowrap shadow-lg",
+                                        children: "Claim Offer →"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                        lineNumber: 6366,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/web-hosting/page.tsx",
+                                lineNumber: 6363,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6337,
+                        lineNumber: 6349,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    /*#__PURE__*/ _jsxDEV("div", {
                         className: "absolute top-0 left-0 w-20 h-20 bg-white/10 rounded-full -translate-x-10 -translate-y-10"
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6365,
+                        lineNumber: 6377,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    /*#__PURE__*/ _jsxDEV("div", {
                         className: "absolute bottom-0 right-0 w-16 h-16 bg-white/10 rounded-full translate-x-8 translate-y-8"
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6366,
+                        lineNumber: 6378,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6336,
+                lineNumber: 6348,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+            /*#__PURE__*/ _jsxDEV("nav", {
                 className: "sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200/50 shadow-sm",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: /*#__PURE__*/ _jsxDEV("div", {
                     className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    children: /*#__PURE__*/ _jsxDEV("div", {
                         className: "flex items-center justify-between",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            /*#__PURE__*/ _jsxDEV("div", {
                                 className: "flex items-center gap-3",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         className: "w-10 h-10 rounded-xl bg-gradient-to-br from-green-600 to-emerald-700 flex items-center justify-center shadow-lg",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: /*#__PURE__*/ _jsxDEV("span", {
                                             className: "text-white font-bold text-sm",
                                             children: "DC"
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6375,
+                                            lineNumber: 6387,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6374,
+                                        lineNumber: 6386,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                            /*#__PURE__*/ _jsxDEV("h1", {
                                                 className: "text-xl font-bold bg-gradient-to-r from-green-600 to-emerald-700 bg-clip-text text-transparent",
                                                 children: "DigiCompares"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6378,
+                                                lineNumber: 6390,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            /*#__PURE__*/ _jsxDEV("p", {
                                                 className: "text-xs text-gray-600 font-medium",
-                                                children: "2025 Hosting Reviews & Deals"
+                                                children: "2025 Hosting Reviews & AI Tools"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6381,
+                                                lineNumber: 6393,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6377,
+                                        lineNumber: 6389,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                lineNumber: 6373,
+                                lineNumber: 6385,
                                 columnNumber: 13
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            /*#__PURE__*/ _jsxDEV("div", {
                                 className: "flex items-center gap-4",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    /*#__PURE__*/ _jsxDEV("a", {
                                         href: "#comparison",
                                         className: "text-sm font-semibold text-gray-700 hover:text-green-600 transition-colors hidden sm:block",
                                         children: "Comparison"
                                     }, void 0, false, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6385,
+                                        lineNumber: 6397,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    /*#__PURE__*/ _jsxDEV("a", {
                                         href: "#performance",
                                         className: "text-sm font-semibold text-gray-700 hover:text-green-600 transition-colors hidden sm:block",
                                         children: "Performance"
                                     }, void 0, false, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6388,
+                                        lineNumber: 6400,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    /*#__PURE__*/ _jsxDEV("a", {
                                         href: "#faq",
                                         className: "text-sm font-semibold text-gray-700 hover:text-green-600 transition-colors hidden sm:block",
                                         children: "FAQ"
                                     }, void 0, false, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6391,
+                                        lineNumber: 6403,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    /*#__PURE__*/ _jsxDEV("a", {
                                         href: "/coupons",
-                                        className: "text-sm font-semibold text-purple-600 hover:text-purple-700 transition-colors hidden sm:block",
+                                        className: "text-sm font-semibold text-yellow-600 hover:text-yellow-700 transition-colors hidden sm:block",
                                         children: "🎫 Coupons"
                                     }, void 0, false, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6394,
+                                        lineNumber: 6406,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CouponButton, {
+                                    /*#__PURE__*/ _jsxDEV(CouponButton, {
                                         size: "small"
                                     }, void 0, false, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6400,
+                                        lineNumber: 6412,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                lineNumber: 6384,
+                                lineNumber: 6396,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6372,
+                        lineNumber: 6384,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/web-hosting/page.tsx",
-                    lineNumber: 6371,
+                    lineNumber: 6383,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6370,
+                lineNumber: 6382,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            /*#__PURE__*/ _jsxDEV("section", {
                 className: "relative min-h-[85vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute inset-0 bg-gradient-to-br from-blue-900/95 via-indigo-900/90 to-purple-900/95"
+                    /*#__PURE__*/ _jsxDEV("div", {
+                        className: "absolute inset-0 bg-gradient-to-br from-green-900/95 via-emerald-900/90 to-teal-900/95"
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6408,
+                        lineNumber: 6420,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    /*#__PURE__*/ _jsxDEV("div", {
                         className: "absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6409,
+                        lineNumber: 6421,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    /*#__PURE__*/ _jsxDEV("div", {
                         className: "max-w-7xl mx-auto relative z-10 w-full",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: /*#__PURE__*/ _jsxDEV("div", {
                             className: "text-center",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                /*#__PURE__*/ _jsxDEV("div", {
                                     className: "inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-xs font-bold text-white mb-6 shadow-lg",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "w-2 h-2 bg-green-400 rounded-full animate-pulse"
+                                        /*#__PURE__*/ _jsxDEV("span", {
+                                            className: "w-2 h-2 bg-yellow-400 rounded-full animate-pulse"
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6413,
+                                            lineNumber: 6425,
                                             columnNumber: 15
                                         }, this),
-                                        "🏆 #1 RATED HOSTING 2025"
+                                        "🏆 #1 AI-POWERED HOSTING 2025"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6412,
+                                    lineNumber: 6424,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                /*#__PURE__*/ _jsxDEV("h1", {
                                     className: "text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight",
                                     children: [
-                                        "Premium Web Hosting",
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "block bg-gradient-to-r from-blue-300 via-indigo-200 to-purple-300 bg-clip-text text-transparent mt-2",
-                                            children: "Starts at $1.99"
+                                        "Next-Gen Web Hosting",
+                                        /*#__PURE__*/ _jsxDEV("span", {
+                                            className: "block bg-gradient-to-r from-green-300 via-emerald-200 to-teal-300 bg-clip-text text-transparent mt-2",
+                                            children: "Powered by AI"
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6419,
+                                            lineNumber: 6431,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6417,
+                                    lineNumber: 6429,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                /*#__PURE__*/ _jsxDEV("p", {
                                     className: "text-lg sm:text-xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed",
-                                    children: "Get enterprise-grade performance, 200GB NVMe storage, and 8 global data centers - all starting at just $1.99/month with our exclusive coupon."
+                                    children: "Experience the future of web hosting with AI-powered optimization, lightning-fast NVMe storage, and enterprise security - starting at just $1.99/month."
                                 }, void 0, false, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6424,
+                                    lineNumber: 6436,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                /*#__PURE__*/ _jsxDEV("div", {
                                     className: "grid grid-cols-2 lg:grid-cols-4 gap-3 max-w-3xl mx-auto mb-8",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(TrustBadge, {
+                                        /*#__PURE__*/ _jsxDEV(TrustBadge, {
+                                            icon: "🤖",
+                                            text: "AI Powered",
+                                            subtext: "Smart Optimization"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6443,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV(TrustBadge, {
                                             icon: "⚡",
                                             text: "160ms Speed",
                                             subtext: "Lightning Fast"
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6431,
+                                            lineNumber: 6444,
                                             columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(TrustBadge, {
+                                        /*#__PURE__*/ _jsxDEV(TrustBadge, {
                                             icon: "🌍",
                                             text: "8 Data Centers",
                                             subtext: "Global Network"
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6432,
+                                            lineNumber: 6445,
                                             columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(TrustBadge, {
+                                        /*#__PURE__*/ _jsxDEV(TrustBadge, {
                                             icon: "🛡️",
-                                            text: "99.99% Uptime",
-                                            subtext: "Maximum Reliability"
+                                            text: "AI Security",
+                                            subtext: "Threat Protection"
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6433,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(TrustBadge, {
-                                            icon: "💬",
-                                            text: "4.9/5 Support",
-                                            subtext: "24/7 Expert Help"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6434,
+                                            lineNumber: 6446,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6430,
+                                    lineNumber: 6442,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                /*#__PURE__*/ _jsxDEV("div", {
                                     className: "flex flex-col sm:flex-row gap-3 justify-center items-center max-w-2xl mx-auto",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        /*#__PURE__*/ _jsxDEV("a", {
                                             href: HOSTINGER_AFFILIATE,
                                             target: "_blank",
                                             rel: "noopener noreferrer",
                                             className: "inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 text-base shadow-xl w-full sm:w-auto justify-center",
                                             children: [
-                                                "🚀 Get Hostinger - $1.99/mo",
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                "🤖 Get Hostinger AI - $1.99/mo",
+                                                /*#__PURE__*/ _jsxDEV("span", {
                                                     className: "bg-white/20 px-2 py-1 rounded-full text-xs",
                                                     children: "85% OFF"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 6445,
+                                                    lineNumber: 6457,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6438,
+                                            lineNumber: 6450,
                                             columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CouponButton, {
+                                        /*#__PURE__*/ _jsxDEV(CouponButton, {
                                             size: "medium",
                                             className: "w-full sm:w-auto"
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6447,
+                                            lineNumber: 6459,
                                             columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        /*#__PURE__*/ _jsxDEV("button", {
                                             onClick: scrollToTable,
                                             className: "inline-flex items-center gap-2 px-6 py-4 bg-white/10 backdrop-blur-sm text-white font-bold rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/20 text-base w-full sm:w-auto justify-center",
                                             children: "📊 Compare All Providers"
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6448,
+                                            lineNumber: 6460,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6437,
+                                    lineNumber: 6449,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                /*#__PURE__*/ _jsxDEV("p", {
                                     className: "text-gray-300 mt-4 text-sm",
-                                    children: "🎁 Free Domain + $200 worth of premium features included"
+                                    children: "🎁 Free AI Website Builder + $200 worth of premium features included"
                                 }, void 0, false, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6456,
+                                    lineNumber: 6468,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6411,
+                            lineNumber: 6423,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6410,
+                        lineNumber: 6422,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute bottom-8 left-1/2 transform -translate-x-1/2",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "animate-bounce bg-white/20 p-2 rounded-full",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "w-6 h-10 border-2 border-white rounded-full flex justify-center",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "w-1 h-3 bg-white rounded-full mt-2"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6466,
-                                    columnNumber: 15
-                                }, this)
+                    /*#__PURE__*/ _jsxDEV("div", {
+                        className: "absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce",
+                        children: /*#__PURE__*/ _jsxDEV("div", {
+                            className: "w-6 h-10 border-2 border-white rounded-full flex justify-center",
+                            children: /*#__PURE__*/ _jsxDEV("div", {
+                                className: "w-1 h-3 bg-white rounded-full mt-2"
                             }, void 0, false, {
                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                lineNumber: 6465,
+                                lineNumber: 6477,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6464,
+                            lineNumber: 6476,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6463,
+                        lineNumber: 6475,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6407,
+                lineNumber: 6419,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-blue-50/30 to-white",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            /*#__PURE__*/ _jsxDEV("section", {
+                className: "py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-green-50/30 to-white",
+                children: /*#__PURE__*/ _jsxDEV("div", {
                     className: "max-w-7xl mx-auto",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    children: /*#__PURE__*/ _jsxDEV("div", {
                         className: "grid lg:grid-cols-2 gap-8 items-center",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            /*#__PURE__*/ _jsxDEV("div", {
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         className: "inline-flex items-center gap-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-3 py-1 rounded-full text-xs font-bold mb-4",
                                         children: "🏅 EDITOR'S CHOICE 2025"
                                     }, void 0, false, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6477,
+                                        lineNumber: 6487,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    /*#__PURE__*/ _jsxDEV("h2", {
                                         className: "text-2xl sm:text-3xl font-bold text-gray-900 mb-4",
-                                        children: "Why Hostinger Dominates 2025"
+                                        children: "Why Hostinger AI Dominates 2025"
                                     }, void 0, false, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6481,
+                                        lineNumber: 6491,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    /*#__PURE__*/ _jsxDEV("p", {
                                         className: "text-base text-gray-700 mb-6 leading-relaxed",
-                                        children: "Hostinger continues to lead the hosting industry with unbeatable performance, comprehensive features, and exceptional value. With 160ms response times, 200GB NVMe storage, and 8 global data centers, it outperforms competitors costing significantly more."
+                                        children: "Hostinger has revolutionized web hosting with integrated AI capabilities that automate optimization, security, and content creation. With 160ms response times, 200GB NVMe storage, and 8 global data centers, it outperforms competitors costing 5x more."
                                     }, void 0, false, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6485,
+                                        lineNumber: 6495,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         className: "space-y-4 mb-6",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            /*#__PURE__*/ _jsxDEV("div", {
                                                 className: "flex items-start gap-3",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    /*#__PURE__*/ _jsxDEV("div", {
                                                         className: "w-10 h-10 bg-gradient-to-r from-green-500 to-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        children: /*#__PURE__*/ _jsxDEV("span", {
+                                                            className: "text-white text-lg",
+                                                            children: "🤖"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                                            lineNumber: 6504,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                                        lineNumber: 6503,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ _jsxDEV("div", {
+                                                        children: [
+                                                            /*#__PURE__*/ _jsxDEV("h4", {
+                                                                className: "font-bold text-gray-900 text-base mb-1",
+                                                                children: "AI-Powered Optimization"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/web-hosting/page.tsx",
+                                                                lineNumber: 6507,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ _jsxDEV("p", {
+                                                                className: "text-gray-700 text-sm",
+                                                                children: "Automatic performance tuning, content generation, and security monitoring."
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/web-hosting/page.tsx",
+                                                                lineNumber: 6508,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                                        lineNumber: 6506,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/web-hosting/page.tsx",
+                                                lineNumber: 6502,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ _jsxDEV("div", {
+                                                className: "flex items-start gap-3",
+                                                children: [
+                                                    /*#__PURE__*/ _jsxDEV("div", {
+                                                        className: "w-10 h-10 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md",
+                                                        children: /*#__PURE__*/ _jsxDEV("span", {
                                                             className: "text-white text-lg",
                                                             children: "⚡"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                                            lineNumber: 6495,
+                                                            lineNumber: 6516,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6494,
+                                                        lineNumber: 6515,
                                                         columnNumber: 19
                                                     }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    /*#__PURE__*/ _jsxDEV("div", {
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                            /*#__PURE__*/ _jsxDEV("h4", {
                                                                 className: "font-bold text-gray-900 text-base mb-1",
                                                                 children: "Lightning Fast Performance"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6498,
+                                                                lineNumber: 6519,
                                                                 columnNumber: 21
                                                             }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            /*#__PURE__*/ _jsxDEV("p", {
                                                                 className: "text-gray-700 text-sm",
                                                                 children: "160ms response times with LiteSpeed servers and global edge caching."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6499,
+                                                                lineNumber: 6520,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6497,
+                                                        lineNumber: 6518,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6493,
+                                                lineNumber: 6514,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            /*#__PURE__*/ _jsxDEV("div", {
                                                 className: "flex items-start gap-3",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-10 h-10 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-white text-lg",
-                                                            children: "🌍"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                                            lineNumber: 6507,
-                                                            columnNumber: 21
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6506,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                className: "font-bold text-gray-900 text-base mb-1",
-                                                                children: "Global Infrastructure"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6510,
-                                                                columnNumber: 21
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-gray-700 text-sm",
-                                                                children: "8 strategically located data centers ensure optimal performance worldwide."
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6511,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6509,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6505,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-start gap-3",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    /*#__PURE__*/ _jsxDEV("div", {
                                                         className: "w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        children: /*#__PURE__*/ _jsxDEV("span", {
                                                             className: "text-white text-lg",
                                                             children: "🛡️"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                                            lineNumber: 6519,
+                                                            lineNumber: 6528,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6518,
+                                                        lineNumber: 6527,
                                                         columnNumber: 19
                                                     }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    /*#__PURE__*/ _jsxDEV("div", {
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                            /*#__PURE__*/ _jsxDEV("h4", {
                                                                 className: "font-bold text-gray-900 text-base mb-1",
                                                                 children: "Enterprise Security"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6522,
+                                                                lineNumber: 6531,
                                                                 columnNumber: 21
                                                             }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            /*#__PURE__*/ _jsxDEV("p", {
                                                                 className: "text-gray-700 text-sm",
-                                                                children: "Advanced threat detection, WAF protection, and automated security monitoring."
+                                                                children: "AI threat detection, WAF protection, and automated malware scanning."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6523,
+                                                                lineNumber: 6532,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6521,
+                                                        lineNumber: 6530,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6517,
+                                                lineNumber: 6526,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6492,
+                                        lineNumber: 6501,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         className: "flex flex-col sm:flex-row gap-3",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            /*#__PURE__*/ _jsxDEV("a", {
                                                 href: HOSTINGER_AFFILIATE,
                                                 target: "_blank",
                                                 rel: "noopener noreferrer",
                                                 className: "inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-lg hover:shadow-xl hover:scale-105 transition-all duration-300 text-sm justify-center",
-                                                children: "🚀 Get Hostinger - $1.99/mo"
+                                                children: "🚀 Get Hostinger AI - $1.99/mo"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6531,
+                                                lineNumber: 6540,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CouponButton, {
+                                            /*#__PURE__*/ _jsxDEV(CouponButton, {
                                                 size: "small"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6539,
+                                                lineNumber: 6548,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6530,
+                                        lineNumber: 6539,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                lineNumber: 6476,
+                                lineNumber: 6486,
                                 columnNumber: 13
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            /*#__PURE__*/ _jsxDEV("div", {
                                 className: "bg-white rounded-2xl p-6 shadow-2xl border border-gray-200/50",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         className: "text-center mb-6",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            /*#__PURE__*/ _jsxDEV("div", {
                                                 className: "text-4xl mb-3",
-                                                children: "🏆"
+                                                children: "🤖"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6545,
+                                                lineNumber: 6554,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            /*#__PURE__*/ _jsxDEV("h3", {
                                                 className: "text-xl font-bold text-gray-900 mb-1",
-                                                children: "Hostinger 2025"
+                                                children: "Hostinger AI 2025"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6546,
+                                                lineNumber: 6555,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            /*#__PURE__*/ _jsxDEV("p", {
                                                 className: "text-gray-600 text-sm",
-                                                children: "Premium Web Hosting"
+                                                children: "Next-Generation Web Hosting"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6547,
+                                                lineNumber: 6556,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6544,
+                                        lineNumber: 6553,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         className: "space-y-4",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            /*#__PURE__*/ _jsxDEV("div", {
                                                 className: "flex justify-between items-center p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    /*#__PURE__*/ _jsxDEV("span", {
                                                         className: "font-semibold text-gray-900 text-sm",
                                                         children: "Starting Price"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6552,
+                                                        lineNumber: 6561,
                                                         columnNumber: 19
                                                     }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    /*#__PURE__*/ _jsxDEV("div", {
                                                         className: "text-right",
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            /*#__PURE__*/ _jsxDEV("span", {
                                                                 className: "text-lg font-bold text-green-600",
                                                                 children: "$1.99/mo"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6554,
+                                                                lineNumber: 6563,
                                                                 columnNumber: 21
                                                             }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            /*#__PURE__*/ _jsxDEV("div", {
                                                                 className: "text-xs text-gray-600 line-through",
                                                                 children: "$12.99/mo"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6555,
+                                                                lineNumber: 6564,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6553,
+                                                        lineNumber: 6562,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6551,
+                                                lineNumber: 6560,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            /*#__PURE__*/ _jsxDEV("div", {
                                                 className: "flex justify-between items-center p-3 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    /*#__PURE__*/ _jsxDEV("span", {
                                                         className: "font-semibold text-gray-900 text-sm",
                                                         children: "Performance"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6560,
+                                                        lineNumber: 6569,
                                                         columnNumber: 19
                                                     }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    /*#__PURE__*/ _jsxDEV("span", {
                                                         className: "text-lg font-bold text-blue-600",
                                                         children: "160ms"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6561,
+                                                        lineNumber: 6570,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6559,
+                                                lineNumber: 6568,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            /*#__PURE__*/ _jsxDEV("div", {
                                                 className: "flex justify-between items-center p-3 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg border border-purple-200",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    /*#__PURE__*/ _jsxDEV("span", {
                                                         className: "font-semibold text-gray-900 text-sm",
                                                         children: "Uptime"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6565,
+                                                        lineNumber: 6574,
                                                         columnNumber: 19
                                                     }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    /*#__PURE__*/ _jsxDEV("span", {
                                                         className: "text-lg font-bold text-purple-600",
                                                         children: "99.99%"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6566,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6564,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex justify-between items-center p-3 bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg border border-orange-200",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "font-semibold text-gray-900 text-sm",
-                                                        children: "Support Rating"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6570,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-lg font-bold text-orange-600",
-                                                        children: "4.9/5"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6571,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6569,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "bg-gradient-to-r from-green-500 to-emerald-600 rounded-lg p-3 text-white text-center shadow-lg",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "font-bold text-sm",
-                                                        children: "$200+ Value Included Free"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/web-hosting/page.tsx",
                                                         lineNumber: 6575,
                                                         columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-xs opacity-90",
-                                                        children: "Domain, SSL, and Premium Features"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6576,
-                                                        columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6574,
+                                                lineNumber: 6573,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg p-3 text-white text-center shadow-lg border-2 border-purple-400",
+                                            /*#__PURE__*/ _jsxDEV("div", {
+                                                className: "flex justify-between items-center p-3 bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg border border-orange-200",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "font-bold text-sm",
-                                                        children: "🎫 Extra Savings Available!"
+                                                    /*#__PURE__*/ _jsxDEV("span", {
+                                                        className: "font-semibold text-gray-900 text-sm",
+                                                        children: "AI Features"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                                        lineNumber: 6579,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ _jsxDEV("span", {
+                                                        className: "text-lg font-bold text-orange-600",
+                                                        children: "4 Tools"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
                                                         lineNumber: 6580,
                                                         columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-xs opacity-90",
-                                                        children: "Use coupon code for additional discount"
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/web-hosting/page.tsx",
+                                                lineNumber: 6578,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ _jsxDEV("div", {
+                                                className: "bg-gradient-to-r from-green-500 to-emerald-600 rounded-lg p-3 text-white text-center shadow-lg",
+                                                children: [
+                                                    /*#__PURE__*/ _jsxDEV("p", {
+                                                        className: "font-bold text-sm",
+                                                        children: "$300+ Value Included Free"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6581,
+                                                        lineNumber: 6584,
                                                         columnNumber: 19
                                                     }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CouponButton, {
-                                                        size: "small",
-                                                        className: "mt-2 w-full bg-white text-purple-600 hover:bg-gray-100"
+                                                    /*#__PURE__*/ _jsxDEV("p", {
+                                                        className: "text-xs opacity-90",
+                                                        children: "AI Tools, Domain, SSL, and Premium Features"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6582,
+                                                        lineNumber: 6585,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6579,
+                                                lineNumber: 6583,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ _jsxDEV("div", {
+                                                className: "bg-gradient-to-r from-yellow-400 to-amber-500 rounded-lg p-3 text-gray-900 text-center shadow-lg border-2 border-yellow-300",
+                                                children: [
+                                                    /*#__PURE__*/ _jsxDEV("p", {
+                                                        className: "font-bold text-sm",
+                                                        children: "🎫 Extra 10% OFF Available!"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                                        lineNumber: 6589,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ _jsxDEV("p", {
+                                                        className: "text-xs",
+                                                        children: "Use coupon code for additional savings"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                                        lineNumber: 6590,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ _jsxDEV(CouponButton, {
+                                                        size: "small",
+                                                        className: "mt-2 w-full"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                                        lineNumber: 6591,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/web-hosting/page.tsx",
+                                                lineNumber: 6588,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6550,
+                                        lineNumber: 6559,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                lineNumber: 6543,
+                                lineNumber: 6552,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6475,
+                        lineNumber: 6485,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/web-hosting/page.tsx",
-                    lineNumber: 6474,
+                    lineNumber: 6484,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6473,
+                lineNumber: 6483,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            /*#__PURE__*/ _jsxDEV("section", {
                 id: "performance",
                 className: "py-16 px-4 sm:px-6 lg:px-8 bg-white",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: /*#__PURE__*/ _jsxDEV("div", {
                     className: "max-w-7xl mx-auto",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        /*#__PURE__*/ _jsxDEV("div", {
                             className: "text-center mb-12",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                /*#__PURE__*/ _jsxDEV("h2", {
                                     className: "text-2xl sm:text-3xl font-bold text-gray-900 mb-3",
                                     children: "2025 Performance Benchmarks"
                                 }, void 0, false, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6594,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-base text-gray-600 max-w-3xl mx-auto",
-                                    children: "Real-world performance testing based on 2025 hosting infrastructure"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6597,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6593,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid lg:grid-cols-2 gap-8 mb-12",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-gray-50 rounded-xl p-6 border border-gray-200",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xl font-bold text-gray-900 mb-4",
-                                            children: "Server Response Times"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6604,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "space-y-3",
-                                            children: performanceData.responseTimes.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PerformanceBar, {
-                                                    provider: item.provider,
-                                                    time: item.time,
-                                                    maxTime: maxResponseTime,
-                                                    color: item.color
-                                                }, index, false, {
-                                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 6607,
-                                                    columnNumber: 19
-                                                }, this))
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6605,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-gray-600 mt-3 text-xs",
-                                            children: "Lower response times = Better user experience and SEO rankings"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6616,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/web-hosting/page.tsx",
                                     lineNumber: 6603,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-gray-50 rounded-xl p-6 border border-gray-200",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xl font-bold text-gray-900 mb-4",
-                                            children: "Uptime Performance"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6622,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "space-y-3",
-                                            children: performanceData.uptime.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PerformanceBar, {
-                                                    provider: item.provider,
-                                                    time: item.uptime,
-                                                    maxTime: maxUptime,
-                                                    color: item.color,
-                                                    isUptime: true
-                                                }, index, false, {
-                                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 6625,
-                                                    columnNumber: 19
-                                                }, this))
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6623,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-gray-600 mt-3 text-xs",
-                                            children: "Higher uptime = More reliable website availability and business continuity"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6635,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                /*#__PURE__*/ _jsxDEV("p", {
+                                    className: "text-base text-gray-600 max-w-3xl mx-auto",
+                                    children: "Real-world performance testing based on 2025 hosting infrastructure and AI optimization"
+                                }, void 0, false, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6621,
+                                    lineNumber: 6606,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -7408,354 +7298,448 @@ function ProfessionalHostingComparison() {
                             lineNumber: 6602,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-2 lg:grid-cols-4 gap-4 text-center",
+                        /*#__PURE__*/ _jsxDEV("div", {
+                            className: "grid lg:grid-cols-2 gap-8 mb-12",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-gradient-to-br from-green-500 to-emerald-600 text-white rounded-xl p-4 shadow-lg",
+                                /*#__PURE__*/ _jsxDEV("div", {
+                                    className: "bg-gray-50 rounded-xl p-6 border border-gray-200",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-xl font-bold mb-1",
-                                            children: "160ms"
+                                        /*#__PURE__*/ _jsxDEV("h3", {
+                                            className: "text-xl font-bold text-gray-900 mb-4",
+                                            children: "Server Response Times"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6613,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("div", {
+                                            className: "space-y-3",
+                                            children: performanceData.responseTimes.map((item, index)=>/*#__PURE__*/ _jsxDEV(PerformanceBar, {
+                                                    provider: item.provider,
+                                                    time: item.time,
+                                                    maxTime: maxResponseTime,
+                                                    color: item.color
+                                                }, index, false, {
+                                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                                    lineNumber: 6616,
+                                                    columnNumber: 19
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6614,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("p", {
+                                            className: "text-gray-600 mt-3 text-xs",
+                                            children: "Lower response times = Better user experience and SEO rankings"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6625,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                    lineNumber: 6612,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ _jsxDEV("div", {
+                                    className: "bg-gray-50 rounded-xl p-6 border border-gray-200",
+                                    children: [
+                                        /*#__PURE__*/ _jsxDEV("h3", {
+                                            className: "text-xl font-bold text-gray-900 mb-4",
+                                            children: "Uptime Performance"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6631,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("div", {
+                                            className: "space-y-3",
+                                            children: performanceData.uptime.map((item, index)=>/*#__PURE__*/ _jsxDEV(PerformanceBar, {
+                                                    provider: item.provider,
+                                                    time: item.uptime,
+                                                    maxTime: maxUptime,
+                                                    color: item.color,
+                                                    isUptime: true
+                                                }, index, false, {
+                                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                                    lineNumber: 6634,
+                                                    columnNumber: 19
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6632,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("p", {
+                                            className: "text-gray-600 mt-3 text-xs",
+                                            children: "Higher uptime = More reliable website availability and business continuity"
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
                                             lineNumber: 6644,
                                             columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-green-100 text-xs",
-                                            children: "Hostinger Response"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6645,
-                                            columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6643,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-gradient-to-br from-blue-500 to-indigo-600 text-white rounded-xl p-4 shadow-lg",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-xl font-bold mb-1",
-                                            children: "99.99%"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6648,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-blue-100 text-xs",
-                                            children: "Hostinger Uptime"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6649,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6647,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-gradient-to-br from-purple-500 to-pink-600 text-white rounded-xl p-4 shadow-lg",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-xl font-bold mb-1",
-                                            children: "4.9/5"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6652,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-purple-100 text-xs",
-                                            children: "Support Rating"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6653,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6651,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-gradient-to-br from-indigo-500 to-purple-600 text-white rounded-xl p-4 shadow-lg",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-xl font-bold mb-1",
-                                            children: "8"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6656,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-indigo-100 text-xs",
-                                            children: "Global Data Centers"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6657,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6655,
+                                    lineNumber: 6630,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6642,
+                            lineNumber: 6611,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ _jsxDEV("div", {
+                            className: "grid grid-cols-2 lg:grid-cols-4 gap-4 text-center",
+                            children: [
+                                /*#__PURE__*/ _jsxDEV("div", {
+                                    className: "bg-gradient-to-br from-green-500 to-emerald-600 text-white rounded-xl p-4 shadow-lg",
+                                    children: [
+                                        /*#__PURE__*/ _jsxDEV("div", {
+                                            className: "text-xl font-bold mb-1",
+                                            children: "160ms"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6653,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("div", {
+                                            className: "text-green-100 text-xs",
+                                            children: "Hostinger Response"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6654,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                    lineNumber: 6652,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ _jsxDEV("div", {
+                                    className: "bg-gradient-to-br from-blue-500 to-indigo-600 text-white rounded-xl p-4 shadow-lg",
+                                    children: [
+                                        /*#__PURE__*/ _jsxDEV("div", {
+                                            className: "text-xl font-bold mb-1",
+                                            children: "99.99%"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6657,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("div", {
+                                            className: "text-blue-100 text-xs",
+                                            children: "Hostinger Uptime"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6658,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                    lineNumber: 6656,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ _jsxDEV("div", {
+                                    className: "bg-gradient-to-br from-purple-500 to-pink-600 text-white rounded-xl p-4 shadow-lg",
+                                    children: [
+                                        /*#__PURE__*/ _jsxDEV("div", {
+                                            className: "text-xl font-bold mb-1",
+                                            children: "4.9/5"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6661,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("div", {
+                                            className: "text-purple-100 text-xs",
+                                            children: "Support Rating"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6662,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                    lineNumber: 6660,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ _jsxDEV("div", {
+                                    className: "bg-gradient-to-br from-indigo-500 to-purple-600 text-white rounded-xl p-4 shadow-lg",
+                                    children: [
+                                        /*#__PURE__*/ _jsxDEV("div", {
+                                            className: "text-xl font-bold mb-1",
+                                            children: "8"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6665,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("div", {
+                                            className: "text-indigo-100 text-xs",
+                                            children: "Global Data Centers"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6666,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                    lineNumber: 6664,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/web-hosting/page.tsx",
+                            lineNumber: 6651,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/web-hosting/page.tsx",
-                    lineNumber: 6592,
+                    lineNumber: 6601,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6591,
+                lineNumber: 6600,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            /*#__PURE__*/ _jsxDEV("section", {
                 id: "comparison",
                 ref: tableRef,
                 className: "py-16 px-4 sm:px-6 lg:px-8 bg-gray-50",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: /*#__PURE__*/ _jsxDEV("div", {
                     className: "max-w-7xl mx-auto",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        /*#__PURE__*/ _jsxDEV("div", {
                             className: "text-center mb-12",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                /*#__PURE__*/ _jsxDEV("h2", {
                                     className: "text-2xl sm:text-3xl font-bold text-gray-900 mb-3",
                                     children: "2025 Comprehensive Hosting Comparison"
                                 }, void 0, false, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6667,
+                                    lineNumber: 6676,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                /*#__PURE__*/ _jsxDEV("p", {
                                     className: "text-base text-gray-600 max-w-3xl mx-auto",
-                                    children: "Detailed analysis of all major hosting providers with 2025 features and performance metrics"
+                                    children: "Detailed analysis of all major hosting providers with 2025 features, AI capabilities, and performance metrics"
                                 }, void 0, false, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6670,
+                                    lineNumber: 6679,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6666,
+                            lineNumber: 6675,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        /*#__PURE__*/ _jsxDEV("div", {
                             className: "hidden lg:block bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: /*#__PURE__*/ _jsxDEV("div", {
                                 className: "overflow-x-auto",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
+                                children: /*#__PURE__*/ _jsxDEV("table", {
                                     className: "w-full",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                        /*#__PURE__*/ _jsxDEV("thead", {
+                                            children: /*#__PURE__*/ _jsxDEV("tr", {
                                                 className: "bg-gradient-to-r from-slate-800 to-gray-900 text-white",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                                    /*#__PURE__*/ _jsxDEV("th", {
                                                         className: "px-6 py-6 text-left font-bold text-lg",
                                                         children: "Features"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6681,
+                                                        lineNumber: 6690,
                                                         columnNumber: 21
                                                     }, this),
-                                                    hostingProviders.slice(0, visibleProviders).map((provider)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                                    hostingProviders.slice(0, visibleProviders).map((provider)=>/*#__PURE__*/ _jsxDEV("th", {
                                                             className: `px-4 py-6 text-center font-bold text-lg ${provider.rank === 1 ? 'bg-gradient-to-r from-green-500 to-emerald-600' : ''}`,
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            children: /*#__PURE__*/ _jsxDEV("div", {
                                                                 className: "flex flex-col items-center",
                                                                 children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    /*#__PURE__*/ _jsxDEV("div", {
                                                                         className: "text-3xl mb-2",
                                                                         children: provider.logo
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                                        lineNumber: 6687,
+                                                                        lineNumber: 6696,
                                                                         columnNumber: 27
                                                                     }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    /*#__PURE__*/ _jsxDEV("div", {
                                                                         className: "text-xl font-bold mb-1",
                                                                         children: provider.name
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                                        lineNumber: 6688,
+                                                                        lineNumber: 6697,
                                                                         columnNumber: 27
                                                                     }, this),
-                                                                    provider.badge && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    provider.badge && /*#__PURE__*/ _jsxDEV("span", {
                                                                         className: `px-2 py-1 rounded-full text-xs font-bold ${provider.rank === 1 ? 'bg-yellow-400 text-yellow-900' : 'bg-gray-200 text-gray-700'}`,
                                                                         children: provider.badge
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                                        lineNumber: 6690,
+                                                                        lineNumber: 6699,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6686,
+                                                                lineNumber: 6695,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, provider.id, false, {
                                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                                            lineNumber: 6683,
+                                                            lineNumber: 6692,
                                                             columnNumber: 23
                                                         }, this))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6680,
+                                                lineNumber: 6689,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6679,
+                                            lineNumber: 6688,
                                             columnNumber: 17
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
+                                        /*#__PURE__*/ _jsxDEV("tbody", {
                                             children: [
-                                                comparisonFeatures.map((feature, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FeatureRow, {
+                                                comparisonFeatures.map((feature, idx)=>/*#__PURE__*/ _jsxDEV(FeatureRow, {
                                                         feature: feature,
                                                         providers: hostingProviders.slice(0, visibleProviders)
                                                     }, feature.key, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6705,
+                                                        lineNumber: 6714,
                                                         columnNumber: 21
                                                     }, this)),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                                /*#__PURE__*/ _jsxDEV("tr", {
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                        /*#__PURE__*/ _jsxDEV("td", {
                                                             className: "px-6 py-6 font-bold text-gray-900 bg-gray-50 text-lg",
                                                             children: "Get Started"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                                            lineNumber: 6708,
+                                                            lineNumber: 6717,
                                                             columnNumber: 21
                                                         }, this),
-                                                        hostingProviders.slice(0, visibleProviders).map((provider)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                        hostingProviders.slice(0, visibleProviders).map((provider)=>/*#__PURE__*/ _jsxDEV("td", {
                                                                 className: "px-4 py-6 text-center bg-gray-50",
                                                                 children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                    /*#__PURE__*/ _jsxDEV("a", {
                                                                         href: provider.affiliate,
                                                                         target: "_blank",
                                                                         rel: "noopener noreferrer",
                                                                         className: `inline-block px-4 py-3 rounded-lg font-bold text-white transition-all duration-300 text-sm ${provider.rank === 1 ? 'bg-gradient-to-r from-green-500 to-emerald-600 hover:shadow-xl hover:scale-105 shadow-lg' : 'bg-gray-600 hover:bg-gray-700'}`,
-                                                                        children: provider.rank === 1 ? '🚀 Get Hostinger' : `Visit ${provider.name}`
+                                                                        children: provider.rank === 1 ? '🤖 Get AI Hosting' : `Visit ${provider.name}`
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                                        lineNumber: 6713,
+                                                                        lineNumber: 6722,
                                                                         columnNumber: 25
                                                                     }, this),
-                                                                    provider.rank === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    provider.rank === 1 && /*#__PURE__*/ _jsxDEV("div", {
                                                                         className: "mt-2",
-                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CouponButton, {
+                                                                        children: /*#__PURE__*/ _jsxDEV(CouponButton, {
                                                                             size: "small",
                                                                             className: "w-full"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                                                            lineNumber: 6727,
+                                                                            lineNumber: 6736,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                                        lineNumber: 6726,
+                                                                        lineNumber: 6735,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, provider.id, true, {
                                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6712,
+                                                                lineNumber: 6721,
                                                                 columnNumber: 23
                                                             }, this))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 6707,
+                                                    lineNumber: 6716,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6703,
+                                            lineNumber: 6712,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6678,
+                                    lineNumber: 6687,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                lineNumber: 6677,
+                                lineNumber: 6686,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6676,
+                            lineNumber: 6685,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        /*#__PURE__*/ _jsxDEV("div", {
                             className: "lg:hidden space-y-6",
-                            children: hostingProviders.slice(0, visibleProviders).map((provider)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: hostingProviders.slice(0, visibleProviders).map((provider)=>/*#__PURE__*/ _jsxDEV("div", {
                                     className: "bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: /*#__PURE__*/ _jsxDEV("div", {
                                         className: `p-4 ${provider.rank === 1 ? 'bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500' : ''}`,
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            /*#__PURE__*/ _jsxDEV("div", {
                                                 className: "flex items-center justify-between mb-4",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    /*#__PURE__*/ _jsxDEV("div", {
                                                         className: "flex items-center gap-3",
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            /*#__PURE__*/ _jsxDEV("div", {
                                                                 className: "text-3xl",
                                                                 children: provider.logo
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6745,
+                                                                lineNumber: 6754,
                                                                 columnNumber: 23
                                                             }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            /*#__PURE__*/ _jsxDEV("div", {
                                                                 children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                    /*#__PURE__*/ _jsxDEV("h3", {
                                                                         className: "text-xl font-bold text-gray-900",
                                                                         children: provider.name
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                                        lineNumber: 6747,
+                                                                        lineNumber: 6756,
                                                                         columnNumber: 25
                                                                     }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    /*#__PURE__*/ _jsxDEV("div", {
                                                                         className: "flex items-center gap-1",
                                                                         children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            /*#__PURE__*/ _jsxDEV("span", {
                                                                                 className: "text-yellow-500 text-lg",
                                                                                 children: "⭐"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                                                lineNumber: 6749,
+                                                                                lineNumber: 6758,
                                                                                 columnNumber: 27
                                                                             }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            /*#__PURE__*/ _jsxDEV("span", {
                                                                                 className: "text-sm text-gray-600",
                                                                                 children: [
                                                                                     provider.rating,
@@ -7765,142 +7749,83 @@ function ProfessionalHostingComparison() {
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                                                lineNumber: 6750,
+                                                                                lineNumber: 6759,
                                                                                 columnNumber: 27
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                                        lineNumber: 6748,
+                                                                        lineNumber: 6757,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6746,
+                                                                lineNumber: 6755,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6744,
+                                                        lineNumber: 6753,
                                                         columnNumber: 21
                                                     }, this),
-                                                    provider.badge && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    provider.badge && /*#__PURE__*/ _jsxDEV("span", {
                                                         className: `px-2 py-1 rounded-full text-xs font-bold ${provider.rank === 1 ? 'bg-yellow-400 text-yellow-900' : 'bg-gray-200 text-gray-700'}`,
                                                         children: provider.badge
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6757,
+                                                        lineNumber: 6766,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6743,
+                                                lineNumber: 6752,
                                                 columnNumber: 19
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            /*#__PURE__*/ _jsxDEV("div", {
                                                 className: "mb-4 p-3 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    /*#__PURE__*/ _jsxDEV("div", {
                                                         className: "flex items-baseline gap-2 mb-1",
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            /*#__PURE__*/ _jsxDEV("span", {
                                                                 className: "text-2xl font-bold text-gray-900",
                                                                 children: provider.price
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6770,
+                                                                lineNumber: 6779,
                                                                 columnNumber: 23
                                                             }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            /*#__PURE__*/ _jsxDEV("span", {
                                                                 className: "text-lg text-gray-500 line-through",
                                                                 children: provider.originalPrice
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6771,
+                                                                lineNumber: 6780,
                                                                 columnNumber: 23
                                                             }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            /*#__PURE__*/ _jsxDEV("span", {
                                                                 className: "bg-gradient-to-r from-green-500 to-emerald-600 text-white px-2 py-1 rounded-full text-xs font-bold",
                                                                 children: provider.discount
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6772,
+                                                                lineNumber: 6781,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6769,
+                                                        lineNumber: 6778,
                                                         columnNumber: 21
                                                     }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    /*#__PURE__*/ _jsxDEV("p", {
                                                         className: "text-gray-600 text-sm",
                                                         children: [
                                                             "Renews at ",
                                                             provider.renewalPrice,
                                                             "/mo"
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6776,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6768,
-                                                columnNumber: 19
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "grid grid-cols-2 gap-3 mb-4",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-center p-3 bg-gray-50 rounded-lg",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-xs text-gray-600",
-                                                                children: "Storage"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6782,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "font-bold text-gray-900 text-sm",
-                                                                children: provider.storage
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6783,
-                                                                columnNumber: 23
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6781,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "text-center p-3 bg-gray-50 rounded-lg",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-xs text-gray-600",
-                                                                children: "Performance"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6786,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "font-bold text-gray-900 text-sm",
-                                                                children: provider.performance
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/web-hosting/page.tsx",
-                                                                lineNumber: 6787,
-                                                                columnNumber: 23
-                                                            }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
@@ -7910,54 +7835,113 @@ function ProfessionalHostingComparison() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6780,
+                                                lineNumber: 6777,
                                                 columnNumber: 19
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            /*#__PURE__*/ _jsxDEV("div", {
+                                                className: "grid grid-cols-2 gap-3 mb-4",
+                                                children: [
+                                                    /*#__PURE__*/ _jsxDEV("div", {
+                                                        className: "text-center p-3 bg-gray-50 rounded-lg",
+                                                        children: [
+                                                            /*#__PURE__*/ _jsxDEV("p", {
+                                                                className: "text-xs text-gray-600",
+                                                                children: "Storage"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/web-hosting/page.tsx",
+                                                                lineNumber: 6791,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ _jsxDEV("p", {
+                                                                className: "font-bold text-gray-900 text-sm",
+                                                                children: provider.storage
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/web-hosting/page.tsx",
+                                                                lineNumber: 6792,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                                        lineNumber: 6790,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ _jsxDEV("div", {
+                                                        className: "text-center p-3 bg-gray-50 rounded-lg",
+                                                        children: [
+                                                            /*#__PURE__*/ _jsxDEV("p", {
+                                                                className: "text-xs text-gray-600",
+                                                                children: "Performance"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/web-hosting/page.tsx",
+                                                                lineNumber: 6795,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ _jsxDEV("p", {
+                                                                className: "font-bold text-gray-900 text-sm",
+                                                                children: provider.performance
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/web-hosting/page.tsx",
+                                                                lineNumber: 6796,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                                        lineNumber: 6794,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/web-hosting/page.tsx",
+                                                lineNumber: 6789,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ _jsxDEV("a", {
                                                 href: provider.affiliate,
                                                 target: "_blank",
                                                 rel: "noopener noreferrer",
                                                 className: `w-full py-3 px-4 rounded-lg font-bold text-center block transition-all duration-300 text-sm ${provider.rank === 1 ? 'bg-gradient-to-r from-green-500 to-emerald-600 hover:shadow-xl hover:scale-105 text-white shadow-lg' : 'bg-gray-900 hover:bg-gray-800 text-white'}`,
-                                                children: provider.rank === 1 ? '🚀 Get Hostinger' : `Visit ${provider.name}`
+                                                children: provider.rank === 1 ? '🤖 Get Hostinger AI' : `Visit ${provider.name}`
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6792,
+                                                lineNumber: 6801,
                                                 columnNumber: 19
                                             }, this),
-                                            provider.rank === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            provider.rank === 1 && /*#__PURE__*/ _jsxDEV("div", {
                                                 className: "mt-4 text-center",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CouponButton, {
+                                                children: /*#__PURE__*/ _jsxDEV(CouponButton, {
                                                     size: "small",
                                                     className: "w-full"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 6808,
+                                                    lineNumber: 6817,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6807,
+                                                lineNumber: 6816,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6742,
+                                        lineNumber: 6751,
                                         columnNumber: 17
                                     }, this)
                                 }, provider.id, false, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6741,
+                                    lineNumber: 6750,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6739,
+                            lineNumber: 6748,
                             columnNumber: 11
                         }, this),
-                        visibleProviders < hostingProviders.length && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        visibleProviders < hostingProviders.length && /*#__PURE__*/ _jsxDEV("div", {
                             className: "text-center mt-8",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            children: /*#__PURE__*/ _jsxDEV("button", {
                                 onClick: showMoreProviders,
                                 className: "px-6 py-3 bg-white text-gray-900 font-bold rounded-lg hover:shadow-lg transition-all duration-300 border-2 border-gray-300 text-sm",
                                 children: [
@@ -7967,499 +7951,465 @@ function ProfessionalHostingComparison() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                lineNumber: 6818,
+                                lineNumber: 6827,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6817,
+                            lineNumber: 6826,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/web-hosting/page.tsx",
-                    lineNumber: 6665,
+                    lineNumber: 6674,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6664,
+                lineNumber: 6673,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            /*#__PURE__*/ _jsxDEV("section", {
                 id: "faq",
                 className: "py-16 px-4 sm:px-6 lg:px-8 bg-white",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: /*#__PURE__*/ _jsxDEV("div", {
                     className: "max-w-4xl mx-auto",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        /*#__PURE__*/ _jsxDEV("div", {
                             className: "text-center mb-12",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                /*#__PURE__*/ _jsxDEV("h2", {
                                     className: "text-2xl sm:text-3xl font-bold text-gray-900 mb-3",
                                     children: "2025 Hosting FAQ"
                                 }, void 0, false, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6833,
+                                    lineNumber: 6842,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                /*#__PURE__*/ _jsxDEV("p", {
                                     className: "text-base text-gray-600",
-                                    children: "Everything you need to know about modern web hosting"
+                                    children: "Everything you need to know about next-generation web hosting"
                                 }, void 0, false, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6836,
+                                    lineNumber: 6845,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6832,
+                            lineNumber: 6841,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        /*#__PURE__*/ _jsxDEV("div", {
                             className: "bg-gray-50 rounded-xl p-4 shadow-lg border border-gray-200",
-                            children: faqData.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FAQItem, {
+                            children: faqData.map((item, index)=>/*#__PURE__*/ _jsxDEV(FAQItem, {
                                     question: item.question,
                                     answer: item.answer,
                                     isOpen: openFAQ === index,
                                     onClick: ()=>toggleFAQ(index)
                                 }, index, false, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6843,
+                                    lineNumber: 6852,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6841,
+                            lineNumber: 6850,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        /*#__PURE__*/ _jsxDEV("div", {
                             className: "mt-12 text-center",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl p-6 text-white shadow-lg border-2 border-purple-400",
+                            children: /*#__PURE__*/ _jsxDEV("div", {
+                                className: "bg-gradient-to-r from-yellow-400 to-amber-500 rounded-2xl p-6 text-gray-900 shadow-lg border-2 border-yellow-300",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    /*#__PURE__*/ _jsxDEV("h3", {
                                         className: "text-xl font-bold mb-2",
                                         children: "🎫 Exclusive 2025 Coupon Available!"
                                     }, void 0, false, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6856,
+                                        lineNumber: 6865,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-white/90 mb-4 text-sm",
-                                        children: "Get additional savings on your Hostinger plan with our special coupon code"
+                                    /*#__PURE__*/ _jsxDEV("p", {
+                                        className: "text-gray-800 mb-4 text-sm",
+                                        children: "Get additional savings on your Hostinger AI plan with our special coupon code"
                                     }, void 0, false, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6857,
+                                        lineNumber: 6866,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CouponButton, {
-                                        size: "medium",
-                                        className: "bg-white text-purple-600 hover:bg-gray-100"
+                                    /*#__PURE__*/ _jsxDEV(CouponButton, {
+                                        size: "medium"
                                     }, void 0, false, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6860,
+                                        lineNumber: 6869,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                lineNumber: 6855,
+                                lineNumber: 6864,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6854,
+                            lineNumber: 6863,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/web-hosting/page.tsx",
-                    lineNumber: 6831,
+                    lineNumber: 6840,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6830,
+                lineNumber: 6839,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            /*#__PURE__*/ _jsxDEV("section", {
                 className: "py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: /*#__PURE__*/ _jsxDEV("div", {
                     className: "max-w-6xl mx-auto text-center",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        /*#__PURE__*/ _jsxDEV("div", {
                             className: "bg-gradient-to-r from-red-500 to-pink-600 rounded-2xl p-6 mb-8",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: /*#__PURE__*/ _jsxDEV("div", {
                                 className: "flex flex-col sm:flex-row items-center justify-between gap-4",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         className: "text-left",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            /*#__PURE__*/ _jsxDEV("h3", {
                                                 className: "text-white font-bold text-xl mb-2",
                                                 children: "🚀 2025 Limited Time Offer!"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6872,
+                                                lineNumber: 6881,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            /*#__PURE__*/ _jsxDEV("p", {
                                                 className: "text-white/90 text-sm",
-                                                children: "Hostinger with 85% discount - Only $1.99/month with exclusive coupon"
+                                                children: "Hostinger AI with 85% discount - Only $1.99/month with exclusive coupon"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6873,
+                                                lineNumber: 6882,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6871,
+                                        lineNumber: 6880,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         className: "flex items-center gap-4",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CountdownTimer, {}, void 0, false, {
+                                            /*#__PURE__*/ _jsxDEV(CountdownTimer, {}, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6878,
+                                                lineNumber: 6887,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CouponButton, {
+                                            /*#__PURE__*/ _jsxDEV(CouponButton, {
                                                 size: "small"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6879,
+                                                lineNumber: 6888,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6877,
+                                        lineNumber: 6886,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                lineNumber: 6870,
+                                lineNumber: 6879,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6869,
+                            lineNumber: 6878,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        /*#__PURE__*/ _jsxDEV("h2", {
                             className: "text-2xl sm:text-3xl font-bold text-white mb-4",
-                            children: "Ready for Premium Hosting?"
+                            children: "Ready for AI-Powered Hosting?"
                         }, void 0, false, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6884,
+                            lineNumber: 6893,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        /*#__PURE__*/ _jsxDEV("p", {
                             className: "text-lg text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed",
-                            children: "Join thousands of websites upgrading to high-performance hosting in 2025. Experience enterprise-grade performance with budget-friendly pricing."
+                            children: "Join thousands of websites upgrading to AI-optimized hosting in 2025. Experience the future with automated performance, security, and content generation."
                         }, void 0, false, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6888,
+                            lineNumber: 6897,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        /*#__PURE__*/ _jsxDEV("div", {
                             className: "grid md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                /*#__PURE__*/ _jsxDEV("div", {
                                     className: "bg-white/10 rounded-xl p-4 backdrop-blur-sm border border-white/20",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                        /*#__PURE__*/ _jsxDEV("h4", {
                                             className: "font-bold text-white text-base mb-3",
-                                            children: "⚡ Premium Features"
+                                            children: "🤖 AI Features"
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6895,
+                                            lineNumber: 6904,
                                             columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                        /*#__PURE__*/ _jsxDEV("ul", {
                                             className: "text-gray-300 space-y-2 text-sm",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "• 200GB NVMe Storage"
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: "• AI Content Generator"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 6897,
+                                                    lineNumber: 6906,
                                                     columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "• 8 Global Data Centers"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 6898,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "• Free Domain & SSL"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 6899,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "• LiteSpeed Servers"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 6900,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6896,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6894,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-white/10 rounded-xl p-4 backdrop-blur-sm border border-white/20",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                            className: "font-bold text-white text-base mb-3",
-                                            children: "💰 2025 Pricing"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6905,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                            className: "text-gray-300 space-y-2 text-sm",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "• 85% Discount"
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: "• AI Security Scanner"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/web-hosting/page.tsx",
                                                     lineNumber: 6907,
                                                     columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "• 30-day Money-back"
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: "• AI Performance Optimizer"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/web-hosting/page.tsx",
                                                     lineNumber: 6908,
                                                     columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "• Free Website Migration"
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: "• AI SEO Assistant"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/web-hosting/page.tsx",
                                                     lineNumber: 6909,
                                                     columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "• No Hidden Fees"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 6910,
-                                                    columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6906,
+                                            lineNumber: 6905,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6904,
+                                    lineNumber: 6903,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl p-4 text-white",
+                                /*#__PURE__*/ _jsxDEV("div", {
+                                    className: "bg-white/10 rounded-xl p-4 backdrop-blur-sm border border-white/20",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                            className: "font-bold text-base mb-3",
-                                            children: "🚀 Special 2025 Deal"
+                                        /*#__PURE__*/ _jsxDEV("h4", {
+                                            className: "font-bold text-white text-base mb-3",
+                                            children: "⚡ 2025 Performance"
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6915,
+                                            lineNumber: 6914,
                                             columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-2xl font-bold mb-1",
-                                            children: "$1.99/mo"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6916,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-green-100 text-xs",
-                                            children: "85% OFF Regular Price"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6917,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "mt-3 text-xs",
+                                        /*#__PURE__*/ _jsxDEV("ul", {
+                                            className: "text-gray-300 space-y-2 text-sm",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    children: "Free Features Included"
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: "• 160ms Response Time"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                                    lineNumber: 6916,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: "• 200GB NVMe Storage"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                                    lineNumber: 6917,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: "• 8 Global Data Centers"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                                    lineNumber: 6918,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: "• 99.99% Uptime"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/web-hosting/page.tsx",
                                                     lineNumber: 6919,
                                                     columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    children: "30-day money-back guarantee"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 6920,
-                                                    columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 6918,
+                                            lineNumber: 6915,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6914,
+                                    lineNumber: 6913,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ _jsxDEV("div", {
+                                    className: "bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl p-4 text-white",
+                                    children: [
+                                        /*#__PURE__*/ _jsxDEV("h4", {
+                                            className: "font-bold text-base mb-3",
+                                            children: "💰 Special 2025 Pricing"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6924,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("div", {
+                                            className: "text-2xl font-bold mb-1",
+                                            children: "$1.99/mo"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6925,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("p", {
+                                            className: "text-green-100 text-xs",
+                                            children: "85% OFF Regular Price"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6926,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("div", {
+                                            className: "mt-3 text-xs",
+                                            children: [
+                                                /*#__PURE__*/ _jsxDEV("p", {
+                                                    children: "Free AI Tools Included"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                                    lineNumber: 6928,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ _jsxDEV("p", {
+                                                    children: "30-day money-back guarantee"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                                    lineNumber: 6929,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 6927,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                    lineNumber: 6923,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6893,
+                            lineNumber: 6902,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        /*#__PURE__*/ _jsxDEV("div", {
                             className: "flex flex-col sm:flex-row gap-4 justify-center items-center",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                /*#__PURE__*/ _jsxDEV("a", {
                                     href: HOSTINGER_AFFILIATE,
                                     target: "_blank",
                                     rel: "noopener noreferrer",
                                     className: "inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 text-base shadow-xl w-full sm:w-auto justify-center",
-                                    children: "🚀 Get Hostinger - $1.99/mo"
+                                    children: "🤖 Get Hostinger AI - $1.99/mo"
                                 }, void 0, false, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6926,
+                                    lineNumber: 6935,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CouponButton, {
+                                /*#__PURE__*/ _jsxDEV(CouponButton, {
                                     size: "large",
                                     className: "w-full sm:w-auto"
                                 }, void 0, false, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 6934,
+                                    lineNumber: 6943,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6925,
+                            lineNumber: 6934,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        /*#__PURE__*/ _jsxDEV("p", {
                             className: "text-gray-400 mt-6 text-sm",
-                            children: "⚡ Premium features included • 🔒 30-day money-back guarantee • 🌍 8 global data centers"
+                            children: "⚡ AI features included • 🔒 30-day money-back guarantee • 🌍 8 global data centers"
                         }, void 0, false, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 6937,
+                            lineNumber: 6946,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/web-hosting/page.tsx",
-                    lineNumber: 6868,
+                    lineNumber: 6877,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6867,
+                lineNumber: 6876,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            /*#__PURE__*/ _jsxDEV("section", {
                 className: "py-12 px-4 sm:px-6 lg:px-8 bg-slate-900",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: /*#__PURE__*/ _jsxDEV("div", {
                     className: "max-w-7xl mx-auto",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    children: /*#__PURE__*/ _jsxDEV("div", {
                         className: "bg-slate-800/50 rounded-2xl p-6 border border-slate-700",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                            /*#__PURE__*/ _jsxDEV("h3", {
                                 className: "text-xl font-bold text-white mb-6 text-center",
                                 children: "📝 Important Legal Disclaimers"
                             }, void 0, false, {
                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                lineNumber: 6947,
+                                lineNumber: 6956,
                                 columnNumber: 13
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            /*#__PURE__*/ _jsxDEV("div", {
                                 className: "space-y-6",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                            /*#__PURE__*/ _jsxDEV("h4", {
                                                 className: "font-bold text-red-400 mb-3",
                                                 children: "🛑 Financial & Affiliate Disclosure"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6951,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-gray-300 text-sm leading-relaxed",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                        children: "DigiCompares"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6953,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    " is an independent review platform and participates in various affiliate marketing programs. We may receive compensation when you click on links to products and services and make purchases through our provided affiliate links. This compensation helps support our research, testing, and content creation."
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6952,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6950,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                className: "font-bold text-yellow-400 mb-3",
-                                                children: "⚠️ No Financial Responsibility"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
                                                 lineNumber: 6960,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            /*#__PURE__*/ _jsxDEV("p", {
                                                 className: "text-gray-300 text-sm leading-relaxed",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                        children: "DigiCompares is not responsible for any financial decisions, purchases, or outcomes"
+                                                    /*#__PURE__*/ _jsxDEV("strong", {
+                                                        children: "DigiCompares"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
                                                         lineNumber: 6962,
                                                         columnNumber: 19
                                                     }, this),
-                                                    " resulting from the use of our website, recommendations, or affiliate links. All hosting purchases and financial commitments are made solely at your own risk. We provide information for educational purposes only and do not constitute financial advice."
+                                                    " is an independent review platform and participates in various affiliate marketing programs. We may receive compensation when you click on links to products and services and make purchases through our provided affiliate links. This compensation helps support our research, testing, and content creation."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
@@ -8472,62 +8422,61 @@ function ProfessionalHostingComparison() {
                                         lineNumber: 6959,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                className: "font-bold text-blue-400 mb-3",
-                                                children: "🔍 Accuracy of Information"
+                                            /*#__PURE__*/ _jsxDEV("h4", {
+                                                className: "font-bold text-yellow-400 mb-3",
+                                                children: "⚠️ No Financial Responsibility"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6970,
+                                                lineNumber: 6969,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            /*#__PURE__*/ _jsxDEV("p", {
                                                 className: "text-gray-300 text-sm leading-relaxed",
                                                 children: [
-                                                    "While we strive to provide accurate and up-to-date information, hosting provider specifications, pricing, and features change frequently. ",
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                        children: "Always verify current pricing and terms directly with the hosting provider"
+                                                    /*#__PURE__*/ _jsxDEV("strong", {
+                                                        children: "DigiCompares is not responsible for any financial decisions, purchases, or outcomes"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6973,
-                                                        columnNumber: 51
+                                                        lineNumber: 6971,
+                                                        columnNumber: 19
                                                     }, this),
-                                                    "before making any purchase. The information on this page was last verified in 2025 and may be subject to change."
+                                                    " resulting from the use of our website, recommendations, or affiliate links. All hosting purchases and financial commitments are made solely at your own risk. We provide information for educational purposes only and do not constitute financial advice."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 6971,
+                                                lineNumber: 6970,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 6969,
+                                        lineNumber: 6968,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                className: "font-bold text-green-400 mb-3",
-                                                children: "⚖️ Professional Advice Disclaimer"
+                                            /*#__PURE__*/ _jsxDEV("h4", {
+                                                className: "font-bold text-blue-400 mb-3",
+                                                children: "🔍 Accuracy of Information"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
                                                 lineNumber: 6979,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            /*#__PURE__*/ _jsxDEV("p", {
                                                 className: "text-gray-300 text-sm leading-relaxed",
                                                 children: [
-                                                    "Our content is for informational purposes only and should not be considered as professional financial, legal, or technical advice. ",
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                        children: "Consult with appropriate professionals"
+                                                    "While we strive to provide accurate and up-to-date information, hosting provider specifications, pricing, and features change frequently. ",
+                                                    /*#__PURE__*/ _jsxDEV("strong", {
+                                                        children: "Always verify current pricing and terms directly with the hosting provider"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
                                                         lineNumber: 6982,
-                                                        columnNumber: 47
+                                                        columnNumber: 51
                                                     }, this),
-                                                    " for advice tailored to your specific situation. Your use of this website constitutes acceptance of our Terms of Service and Privacy Policy."
+                                                    "before making any purchase. The information on this page was last verified in 2025 and may be subject to change."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
@@ -8540,28 +8489,28 @@ function ProfessionalHostingComparison() {
                                         lineNumber: 6978,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                className: "font-bold text-purple-400 mb-3",
-                                                children: "💰 Pricing & Offers Disclosure"
+                                            /*#__PURE__*/ _jsxDEV("h4", {
+                                                className: "font-bold text-green-400 mb-3",
+                                                children: "⚖️ Professional Advice Disclaimer"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
                                                 lineNumber: 6988,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            /*#__PURE__*/ _jsxDEV("p", {
                                                 className: "text-gray-300 text-sm leading-relaxed",
                                                 children: [
-                                                    "All prices shown are introductory offers for the first billing period only. ",
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                        children: "Renewal prices are typically higher"
+                                                    "Our content is for informational purposes only and should not be considered as professional financial, legal, or technical advice. ",
+                                                    /*#__PURE__*/ _jsxDEV("strong", {
+                                                        children: "Consult with appropriate professionals"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 6990,
-                                                        columnNumber: 95
+                                                        lineNumber: 6991,
+                                                        columnNumber: 47
                                                     }, this),
-                                                    "and vary by provider. Free domain offers usually apply to the first year only. Always read the terms and conditions of any hosting provider before making a purchase decision."
+                                                    " for advice tailored to your specific situation. Your use of this website constitutes acceptance of our Terms of Service and Privacy Policy."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
@@ -8574,29 +8523,28 @@ function ProfessionalHostingComparison() {
                                         lineNumber: 6987,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "bg-red-900/20 border border-red-800 rounded-lg p-4",
+                                    /*#__PURE__*/ _jsxDEV("div", {
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                className: "font-bold text-red-300 mb-2",
-                                                children: "🚨 Investment Risk Warning"
+                                            /*#__PURE__*/ _jsxDEV("h4", {
+                                                className: "font-bold text-purple-400 mb-3",
+                                                children: "💰 Pricing & Offers Disclosure"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
                                                 lineNumber: 6997,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-red-200 text-sm",
+                                            /*#__PURE__*/ _jsxDEV("p", {
+                                                className: "text-gray-300 text-sm leading-relaxed",
                                                 children: [
-                                                    "Web hosting services involve ongoing financial commitments. ",
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                        children: "There is no guarantee of business success, website traffic, or revenue generation"
+                                                    "All prices shown are introductory offers for the first billing period only. ",
+                                                    /*#__PURE__*/ _jsxDEV("strong", {
+                                                        children: "Renewal prices are typically higher"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
                                                         lineNumber: 6999,
-                                                        columnNumber: 79
+                                                        columnNumber: 95
                                                     }, this),
-                                                    " simply by purchasing hosting services. All business investments carry risk, and you should only invest what you can afford to lose."
+                                                    "and vary by provider. Free domain offers usually apply to the first year only. Always read the terms and conditions of any hosting provider before making a purchase decision."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
@@ -8608,254 +8556,204 @@ function ProfessionalHostingComparison() {
                                         fileName: "[project]/app/web-hosting/page.tsx",
                                         lineNumber: 6996,
                                         columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/web-hosting/page.tsx",
-                                lineNumber: 6949,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mt-8 pt-6 border-t border-slate-700",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-gray-400 text-xs text-center",
+                                    }, this),
+                                    /*#__PURE__*/ _jsxDEV("div", {
+                                        className: "bg-red-900/20 border border-red-800 rounded-lg p-4",
                                         children: [
-                                            "© 2025 DigiCompares. All rights reserved. |",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "#",
-                                                className: "hover:text-white ml-2",
-                                                children: "Privacy Policy"
+                                            /*#__PURE__*/ _jsxDEV("h4", {
+                                                className: "font-bold text-red-300 mb-2",
+                                                children: "🚨 Investment Risk Warning"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 7009,
+                                                lineNumber: 7006,
                                                 columnNumber: 17
                                             }, this),
-                                            " |",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "#",
-                                                className: "hover:text-white ml-2",
-                                                children: "Terms of Service"
-                                            }, void 0, false, {
+                                            /*#__PURE__*/ _jsxDEV("p", {
+                                                className: "text-red-200 text-sm",
+                                                children: [
+                                                    "Web hosting services involve ongoing financial commitments. ",
+                                                    /*#__PURE__*/ _jsxDEV("strong", {
+                                                        children: "There is no guarantee of business success, website traffic, or revenue generation"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                                        lineNumber: 7008,
+                                                        columnNumber: 79
+                                                    }, this),
+                                                    " simply by purchasing hosting services. All business investments carry risk, and you should only invest what you can afford to lose."
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 7010,
-                                                columnNumber: 17
-                                            }, this),
-                                            " |",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "#",
-                                                className: "hover:text-white ml-2",
-                                                children: "Affiliate Disclosure"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 7011,
-                                                columnNumber: 17
-                                            }, this),
-                                            " |",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "#",
-                                                className: "hover:text-white ml-2",
-                                                children: "Contact Us"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/web-hosting/page.tsx",
-                                                lineNumber: 7012,
+                                                lineNumber: 7007,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 7007,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-gray-500 text-xs text-center mt-2",
-                                        children: "DigiCompares is not affiliated with, endorsed by, or sponsored by any hosting providers mentioned on this site. All trademarks, logos and brand names are the property of their respective owners."
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                        lineNumber: 7014,
+                                        lineNumber: 7005,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/web-hosting/page.tsx",
-                                lineNumber: 7006,
+                                lineNumber: 6958,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ _jsxDEV("div", {
+                                className: "mt-8 pt-6 border-t border-slate-700",
+                                children: [
+                                    /*#__PURE__*/ _jsxDEV("p", {
+                                        className: "text-gray-400 text-xs text-center",
+                                        children: [
+                                            "© 2025 DigiCompares. All rights reserved. |",
+                                            /*#__PURE__*/ _jsxDEV("a", {
+                                                href: "#",
+                                                className: "hover:text-white ml-2",
+                                                children: "Privacy Policy"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/web-hosting/page.tsx",
+                                                lineNumber: 7018,
+                                                columnNumber: 17
+                                            }, this),
+                                            " |",
+                                            /*#__PURE__*/ _jsxDEV("a", {
+                                                href: "#",
+                                                className: "hover:text-white ml-2",
+                                                children: "Terms of Service"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/web-hosting/page.tsx",
+                                                lineNumber: 7019,
+                                                columnNumber: 17
+                                            }, this),
+                                            " |",
+                                            /*#__PURE__*/ _jsxDEV("a", {
+                                                href: "#",
+                                                className: "hover:text-white ml-2",
+                                                children: "Affiliate Disclosure"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/web-hosting/page.tsx",
+                                                lineNumber: 7020,
+                                                columnNumber: 17
+                                            }, this),
+                                            " |",
+                                            /*#__PURE__*/ _jsxDEV("a", {
+                                                href: "#",
+                                                className: "hover:text-white ml-2",
+                                                children: "Contact Us"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/web-hosting/page.tsx",
+                                                lineNumber: 7021,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                        lineNumber: 7016,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ _jsxDEV("p", {
+                                        className: "text-gray-500 text-xs text-center mt-2",
+                                        children: "DigiCompares is not affiliated with, endorsed by, or sponsored by any hosting providers mentioned on this site. All trademarks, logos and brand names are the property of their respective owners."
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                        lineNumber: 7023,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/web-hosting/page.tsx",
+                                lineNumber: 7015,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/web-hosting/page.tsx",
-                        lineNumber: 6946,
+                        lineNumber: 6955,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/web-hosting/page.tsx",
-                    lineNumber: 6945,
+                    lineNumber: 6954,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 6944,
+                lineNumber: 6953,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+            /*#__PURE__*/ _jsxDEV("footer", {
                 className: "bg-slate-900 text-gray-400 py-8 px-4 sm:px-6 lg:px-8 border-t border-slate-800",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: /*#__PURE__*/ _jsxDEV("div", {
                     className: "max-w-7xl mx-auto",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        /*#__PURE__*/ _jsxDEV("div", {
                             className: "grid md:grid-cols-4 gap-8 mb-8",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                /*#__PURE__*/ _jsxDEV("div", {
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        /*#__PURE__*/ _jsxDEV("div", {
                                             className: "flex items-center gap-3 mb-4",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                /*#__PURE__*/ _jsxDEV("div", {
                                                     className: "w-8 h-8 rounded-lg bg-gradient-to-br from-green-600 to-emerald-600 flex items-center justify-center",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: /*#__PURE__*/ _jsxDEV("span", {
                                                         className: "text-white font-bold text-sm",
                                                         children: "DC"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 7030,
+                                                        lineNumber: 7039,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 7029,
+                                                    lineNumber: 7038,
                                                     columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                /*#__PURE__*/ _jsxDEV("span", {
                                                     className: "text-white font-bold text-lg",
                                                     children: "DigiCompares"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 7032,
+                                                    lineNumber: 7041,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 7028,
+                                            lineNumber: 7037,
                                             columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        /*#__PURE__*/ _jsxDEV("p", {
                                             className: "text-gray-400 leading-relaxed text-sm",
-                                            children: "Your trusted source for comprehensive web hosting reviews and deals. We provide data-driven insights to help you make informed decisions in 2025."
+                                            children: "Your trusted source for comprehensive web hosting reviews and AI tool comparisons. We provide data-driven insights to help you make informed decisions in 2025."
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 7034,
+                                            lineNumber: 7043,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 7027,
+                                    lineNumber: 7036,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                /*#__PURE__*/ _jsxDEV("div", {
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                        /*#__PURE__*/ _jsxDEV("h4", {
                                             className: "font-semibold text-white mb-4 text-base",
                                             children: "Quick Links"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 7040,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                            className: "space-y-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#comparison",
-                                                        className: "hover:text-white transition-colors text-sm",
-                                                        children: "2025 Comparison"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 7042,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 7042,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#performance",
-                                                        className: "hover:text-white transition-colors text-sm",
-                                                        children: "Performance"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 7043,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 7043,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#faq",
-                                                        className: "hover:text-white transition-colors text-sm",
-                                                        children: "2025 FAQ"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 7044,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 7044,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "/coupons",
-                                                        className: "hover:text-white transition-colors text-sm",
-                                                        children: "🎫 2025 Coupons"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/web-hosting/page.tsx",
-                                                        lineNumber: 7045,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                                    lineNumber: 7045,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 7041,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 7039,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                            className: "font-semibold text-white mb-4 text-base",
-                                            children: "Top Hosting"
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
                                             lineNumber: 7049,
                                             columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                        /*#__PURE__*/ _jsxDEV("ul", {
                                             className: "space-y-2",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: HOSTINGER_AFFILIATE,
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: /*#__PURE__*/ _jsxDEV("a", {
+                                                        href: "#comparison",
                                                         className: "hover:text-white transition-colors text-sm",
-                                                        children: "Hostinger"
+                                                        children: "2025 Comparison"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
                                                         lineNumber: 7051,
@@ -8866,11 +8764,11 @@ function ProfessionalHostingComparison() {
                                                     lineNumber: 7051,
                                                     columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: SITEGROUND_AFFILIATE,
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: /*#__PURE__*/ _jsxDEV("a", {
+                                                        href: "#performance",
                                                         className: "hover:text-white transition-colors text-sm",
-                                                        children: "SiteGround"
+                                                        children: "AI Performance"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
                                                         lineNumber: 7052,
@@ -8881,11 +8779,11 @@ function ProfessionalHostingComparison() {
                                                     lineNumber: 7052,
                                                     columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: A2HOSTING_AFFILIATE,
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: /*#__PURE__*/ _jsxDEV("a", {
+                                                        href: "#faq",
                                                         className: "hover:text-white transition-colors text-sm",
-                                                        children: "A2 Hosting"
+                                                        children: "2025 FAQ"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
                                                         lineNumber: 7053,
@@ -8896,11 +8794,11 @@ function ProfessionalHostingComparison() {
                                                     lineNumber: 7053,
                                                     columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: WPENGINE_AFFILIATE,
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: /*#__PURE__*/ _jsxDEV("a", {
+                                                        href: "/coupons",
                                                         className: "hover:text-white transition-colors text-sm",
-                                                        children: "WP Engine"
+                                                        children: "🎫 2025 Coupons"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
                                                         lineNumber: 7054,
@@ -8923,24 +8821,24 @@ function ProfessionalHostingComparison() {
                                     lineNumber: 7048,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                /*#__PURE__*/ _jsxDEV("div", {
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                        /*#__PURE__*/ _jsxDEV("h4", {
                                             className: "font-semibold text-white mb-4 text-base",
-                                            children: "Legal"
+                                            children: "Top AI Hosting"
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
                                             lineNumber: 7058,
                                             columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                        /*#__PURE__*/ _jsxDEV("ul", {
                                             className: "space-y-2",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#",
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: /*#__PURE__*/ _jsxDEV("a", {
+                                                        href: HOSTINGER_AFFILIATE,
                                                         className: "hover:text-white transition-colors text-sm",
-                                                        children: "Privacy Policy"
+                                                        children: "Hostinger AI"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
                                                         lineNumber: 7060,
@@ -8951,11 +8849,11 @@ function ProfessionalHostingComparison() {
                                                     lineNumber: 7060,
                                                     columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#",
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: /*#__PURE__*/ _jsxDEV("a", {
+                                                        href: SITEGROUND_AFFILIATE,
                                                         className: "hover:text-white transition-colors text-sm",
-                                                        children: "Terms of Service"
+                                                        children: "SiteGround"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
                                                         lineNumber: 7061,
@@ -8966,11 +8864,11 @@ function ProfessionalHostingComparison() {
                                                     lineNumber: 7061,
                                                     columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#",
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: /*#__PURE__*/ _jsxDEV("a", {
+                                                        href: A2HOSTING_AFFILIATE,
                                                         className: "hover:text-white transition-colors text-sm",
-                                                        children: "Affiliate Disclosure"
+                                                        children: "A2 Hosting"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
                                                         lineNumber: 7062,
@@ -8981,11 +8879,11 @@ function ProfessionalHostingComparison() {
                                                     lineNumber: 7062,
                                                     columnNumber: 17
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: "#",
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: /*#__PURE__*/ _jsxDEV("a", {
+                                                        href: WPENGINE_AFFILIATE,
                                                         className: "hover:text-white transition-colors text-sm",
-                                                        children: "Cookie Policy"
+                                                        children: "WP Engine"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/web-hosting/page.tsx",
                                                         lineNumber: 7063,
@@ -9007,79 +8905,151 @@ function ProfessionalHostingComparison() {
                                     fileName: "[project]/app/web-hosting/page.tsx",
                                     lineNumber: 7057,
                                     columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ _jsxDEV("div", {
+                                    children: [
+                                        /*#__PURE__*/ _jsxDEV("h4", {
+                                            className: "font-semibold text-white mb-4 text-base",
+                                            children: "Legal"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 7067,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ _jsxDEV("ul", {
+                                            className: "space-y-2",
+                                            children: [
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: /*#__PURE__*/ _jsxDEV("a", {
+                                                        href: "#",
+                                                        className: "hover:text-white transition-colors text-sm",
+                                                        children: "Privacy Policy"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                                        lineNumber: 7069,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                                    lineNumber: 7069,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: /*#__PURE__*/ _jsxDEV("a", {
+                                                        href: "#",
+                                                        className: "hover:text-white transition-colors text-sm",
+                                                        children: "Terms of Service"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                                        lineNumber: 7070,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                                    lineNumber: 7070,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: /*#__PURE__*/ _jsxDEV("a", {
+                                                        href: "#",
+                                                        className: "hover:text-white transition-colors text-sm",
+                                                        children: "Affiliate Disclosure"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                                        lineNumber: 7071,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                                    lineNumber: 7071,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ _jsxDEV("li", {
+                                                    children: /*#__PURE__*/ _jsxDEV("a", {
+                                                        href: "#",
+                                                        className: "hover:text-white transition-colors text-sm",
+                                                        children: "Cookie Policy"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/web-hosting/page.tsx",
+                                                        lineNumber: 7072,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                                    lineNumber: 7072,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/web-hosting/page.tsx",
+                                            lineNumber: 7068,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/web-hosting/page.tsx",
+                                    lineNumber: 7066,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 7026,
+                            lineNumber: 7035,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        /*#__PURE__*/ _jsxDEV("div", {
                             className: "border-t border-slate-800 pt-6 text-center",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                /*#__PURE__*/ _jsxDEV("p", {
                                     className: "text-gray-500 text-xs",
                                     children: "© 2025 DigiCompares. All rights reserved. We may earn affiliate commissions when you make purchases through our links. This helps support our independent research and testing. All data is verified for 2025."
                                 }, void 0, false, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 7069,
+                                    lineNumber: 7078,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                /*#__PURE__*/ _jsxDEV("p", {
                                     className: "text-gray-600 text-xs mt-2",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                        /*#__PURE__*/ _jsxDEV("strong", {
                                             children: "Disclaimer:"
                                         }, void 0, false, {
                                             fileName: "[project]/app/web-hosting/page.tsx",
-                                            lineNumber: 7074,
+                                            lineNumber: 7083,
                                             columnNumber: 15
                                         }, this),
                                         " DigiCompares is not responsible for any financial decisions or purchases made through our affiliate links. All hosting purchases are made at your own risk. Please review our full disclaimer above."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/web-hosting/page.tsx",
-                                    lineNumber: 7073,
+                                    lineNumber: 7082,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/web-hosting/page.tsx",
-                            lineNumber: 7068,
+                            lineNumber: 7077,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/web-hosting/page.tsx",
-                    lineNumber: 7025,
+                    lineNumber: 7034,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/web-hosting/page.tsx",
-                lineNumber: 7024,
+                lineNumber: 7033,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/web-hosting/page.tsx",
-        lineNumber: 6334,
+        lineNumber: 6346,
         columnNumber: 5
     }, this);
 }
-_s1(ProfessionalHostingComparison, "s49COFZRIRHPt4EJ3XgHllocpXw=");
-_c6 = ProfessionalHostingComparison;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6;
-__turbopack_context__.k.register(_c, "CountdownTimer");
-__turbopack_context__.k.register(_c1, "TrustBadge");
-__turbopack_context__.k.register(_c2, "PerformanceBar");
-__turbopack_context__.k.register(_c3, "FeatureRow");
-__turbopack_context__.k.register(_c4, "FAQItem");
-__turbopack_context__.k.register(_c5, "CouponButton");
-__turbopack_context__.k.register(_c6, "ProfessionalHostingComparison");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
-}
 }),
-]);
+];
 
-//# sourceMappingURL=app_web-hosting_page_tsx_381be1de._.js.map
+//# sourceMappingURL=app_web-hosting_page_tsx_e6f470fe._.js.map
