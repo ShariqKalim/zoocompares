@@ -206,7 +206,7 @@ function SearchBar() {
                         onChange: handleInputChange,
                         onKeyDown: handleKeyDown,
                         onFocus: handleInputFocus,
-                        placeholder: "Compare laptops, phones, services...",
+                        placeholder: "Compare online tools, softwares, services.....",
                         className: "w-full pl-12 pr-4 py-4 rounded-full border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all shadow-sm"
                     }, void 0, false, {
                         fileName: "[project]/components/search-bar.tsx",
