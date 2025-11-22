@@ -1,3 +1,9 @@
 {
-  "/page": "app/page.js"
+  "/[slug]/page": "app/[slug]/page.js",
+  "/coupons/page": "app/coupons/page.js",
+  "/crm-tools/page": "app/crm-tools/page.js",
+  "/e-commerce/page": "app/e-commerce/page.js",
+  "/page": "app/page.js",
+  "/seo-tools/page": "app/seo-tools/page.js",
+  "/web-hosting/page": "app/web-hosting/page.js"
 }

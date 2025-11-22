@@ -1,3 +1,888 @@
-[00:00:02.706] Server  LOG      ✓ Ready in 1806ms
-[00:00:08.869] Server  LOG      ○ Compiling / ...
-[00:00:10.704] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.113] Server  LOG      ✓ Ready in 4.1s
+[00:00:09.242] Server  LOG      ○ Compiling /seo-tools ...
+[00:00:19.866] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:19.910] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:50.531] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:01.334] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.381] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.395] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.407] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.416] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.419] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.429] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.434] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.443] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:01.455] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.461] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.464] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.466] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.468] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.470] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.472] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.477] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:01.483] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:05.167] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.169] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.174] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.176] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.178] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.181] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.183] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.184] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.187] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:05.198] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.199] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.201] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.203] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.207] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.212] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.215] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.217] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.221] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:05.423] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.426] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.429] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.432] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.439] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.446] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.450] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.462] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.466] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:05.496] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.498] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.501] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.503] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.511] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.514] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.516] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.519] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:05.529] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:06.348] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:18.744] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.747] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.750] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.753] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.755] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.757] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.763] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.765] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.767] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:18.790] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.799] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.804] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.807] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.812] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.816] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.819] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.827] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:18.833] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:19.403] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:21.718] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:23.863] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.869] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.875] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.877] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.879] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.881] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.884] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.889] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.892] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:23.899] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.902] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.910] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.915] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.921] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.929] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.933] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.936] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:23.941] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:24.232] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.235] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.237] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.240] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.242] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.244] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.247] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.250] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.252] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:24.273] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.277] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.281] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.284] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.289] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.292] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.296] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.299] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:24.301] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:24.696] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:51.466] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.468] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.470] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.472] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.475] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.478] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.485] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.488] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.491] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:51.522] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.528] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\.next\dev\server\chunks\ssr\node_modules_next_dist_29cbd02b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.536] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.539] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.543] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.548] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.554] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.556] Server  ERROR   C:\Users\Shariq\Desktop\zoocompares\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:51.559] Server  ERROR    ⨯ Error: The default export is not a React Component in "/web-hosting/page"
+[00:14:52.045] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/web-hosting/page"
+[00:16:10.508] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:16:10.622] Server  LOG      ✓ Compiled in 562ms
+[00:16:12.693] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:14.717] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:55.380] Server  LOG      ✓ Compiled in 447ms
+[00:26:40.655] Server  ERROR    ⨯ ./app/crm-tools/page.tsx:3:10
+Ecmascript file had an error
+  1 | // app/page.tsx
+  2 | import Head from 'next/head';
+> 3 | import { useEffect } from 'react';
+    |          ^^^^^^^^^
+  4 |
+  5 | export default function SystemeIOComparison() {
+  6 |   useEffect(() => {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+
+
+
+[00:26:41.224] Browser ERROR   ./app/crm-tools/page.tsx:3:10
+Ecmascript file had an error
+  1 | // app/page.tsx
+  2 | import Head from 'next/head';
+> 3 | import { useEffect } from 'react';
+    |          ^^^^^^^^^
+  4 |
+  5 | export default function SystemeIOComparison() {
+  6 |   useEffect(() => {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:26:41.224] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:26:41.564] Browser ERROR   uncaughtError: Error: ./app/crm-tools/page.tsx:3:10
+Ecmascript file had an error
+  1 | // app/page.tsx
+  2 | import Head from 'next/head';
+> 3 | import { useEffect } from 'react';
+    |          ^^^^^^^^^
+  4 |
+  5 | export default function SystemeIOComparison() {
+  6 |   useEffect(() => {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:26:41.822] Browser ERROR   ./app/crm-tools/page.tsx:3:10
+Ecmascript file had an error
+  1 | // app/page.tsx
+  2 | import Head from 'next/head';
+> 3 | import { useEffect } from 'react';
+    |          ^^^^^^^^^
+  4 |
+  5 | export default function SystemeIOComparison() {
+  6 |   useEffect(() => {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:26:41.822] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:26:41.822] Browser ERROR   ./app/crm-tools/page.tsx:3:10
+Ecmascript file had an error
+  1 | // app/page.tsx
+  2 | import Head from 'next/head';
+> 3 | import { useEffect } from 'react';
+    |          ^^^^^^^^^
+  4 |
+  5 | export default function SystemeIOComparison() {
+  6 |   useEffect(() => {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:26:41.822] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:26:41.822] Browser ERROR   ./app/crm-tools/page.tsx:3:10
+Ecmascript file had an error
+  1 | // app/page.tsx
+  2 | import Head from 'next/head';
+> 3 | import { useEffect } from 'react';
+    |          ^^^^^^^^^
+  4 |
+  5 | export default function SystemeIOComparison() {
+  6 |   useEffect(() => {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:26:41.822] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:26:42.753] Browser ERROR   ./app/crm-tools/page.tsx:3:10
+Ecmascript file had an error
+  1 | // app/page.tsx
+  2 | import Head from 'next/head';
+> 3 | import { useEffect } from 'react';
+    |          ^^^^^^^^^
+  4 |
+  5 | export default function SystemeIOComparison() {
+  6 |   useEffect(() => {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:26:42.753] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:26:42.753] Browser ERROR   ./app/crm-tools/page.tsx:3:10
+Ecmascript file had an error
+  1 | // app/page.tsx
+  2 | import Head from 'next/head';
+> 3 | import { useEffect } from 'react';
+    |          ^^^^^^^^^
+  4 |
+  5 | export default function SystemeIOComparison() {
+  6 |   useEffect(() => {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:26:42.753] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:26:42.753] Browser ERROR   ./app/crm-tools/page.tsx:3:10
+Ecmascript file had an error
+  1 | // app/page.tsx
+  2 | import Head from 'next/head';
+> 3 | import { useEffect } from 'react';
+    |          ^^^^^^^^^
+  4 |
+  5 | export default function SystemeIOComparison() {
+  6 |   useEffect(() => {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:26:42.753] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:26:42.753] Browser ERROR   ./app/crm-tools/page.tsx:3:10
+Ecmascript file had an error
+  1 | // app/page.tsx
+  2 | import Head from 'next/head';
+> 3 | import { useEffect } from 'react';
+    |          ^^^^^^^^^
+  4 |
+  5 | export default function SystemeIOComparison() {
+  6 |   useEffect(() => {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:26:42.753] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:32:12.760] Browser ERROR   ./app/crm-tools/page.tsx:3:10
+Ecmascript file had an error
+  1 | // app/page.tsx
+  2 | import Head from 'next/head';
+> 3 | import { useEffect } from 'react';
+    |          ^^^^^^^^^
+  4 |
+  5 | export default function SystemeIOComparison() {
+  6 |   useEffect(() => {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:32:12.760] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:32:12.761] Browser ERROR   ./app/crm-tools/page.tsx:3:10
+Ecmascript file had an error
+  1 | // app/page.tsx
+  2 | import Head from 'next/head';
+> 3 | import { useEffect } from 'react';
+    |          ^^^^^^^^^
+  4 |
+  5 | export default function SystemeIOComparison() {
+  6 |   useEffect(() => {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:32:12.761] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:00.960] Server  LOG      ✓ Compiled in 558ms
+[00:33:01.760] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:01.760] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:01.761] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:01.761] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:09.215] Browser ERROR   uncaughtError: Error: ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+
+
+[00:33:09.417] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:09.418] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:09.418] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:09.418] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:09.524] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:09.524] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:10.275] Browser ERROR   uncaughtError: Error: ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+
+
+[00:33:10.541] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:10.541] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:10.541] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:10.541] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:10.541] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:10.541] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:10.756] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:10.756] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:10.756] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:10.756] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:10.756] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:10.756] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:10.756] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:10.756] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:10.756] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:10.756] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:10.756] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:10.756] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:10.756] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:10.756] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:22.757] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:22.757] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:22.757] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:22.757] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:25.552] Server  ERROR    ⨯ ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+
+
+
+./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+
+
+
+[00:33:25.771] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:25.771] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:25.771] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:25.771] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:26.025] Browser ERROR   uncaughtError: Error: ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+
+
+[00:33:26.235] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:26.235] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:26.235] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:26.235] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:26.755] Browser ERROR   ./app/crm-tools/page.tsx:402:20
+Parsing ecmascript source code failed
+  400 |                 <strong>Official sources used:</strong> systeme.io, ClickFunnels, Kartra, Kajabi, Groove.cm, Builderall, Leadpages (pricing pages). Inline citations reference the official pages. :contentReference[oaicite:31]{index=31}
+  401 |             </div>
+> 402 |           </footer>
+      |                    ^
+> 403 |         </div>
+      | ^^^^^^^^^
+  404 |       </main>
+  405 |     </>
+  406 |   );
+
+Expected '</', got 'jsx text (
+        )'
+[00:33:26.755] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:57.757] Browser ERROR   ./app/crm-tools/page.tsx:3:10
+Ecmascript file had an error
+  1 | // app/page.tsx
+  2 | import Head from 'next/head';
+> 3 | import { useEffect } from 'react';
+    |          ^^^^^^^^^
+  4 |
+  5 | export default function SystemeIOComparison() {
+  6 |   useEffect(() => {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:33:57.757] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:33:57.758] Browser ERROR   ./app/crm-tools/page.tsx:3:10
+Ecmascript file had an error
+  1 | // app/page.tsx
+  2 | import Head from 'next/head';
+> 3 | import { useEffect } from 'react';
+    |          ^^^^^^^^^
+  4 |
+  5 | export default function SystemeIOComparison() {
+  6 |   useEffect(() => {
+
+You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:33:57.758] Browser ERROR   ./app/crm-tools
+Invalid import
+'client-only' cannot be imported from a Server Component module. It should only be used from a Client Component.
+The error was caused by using 'styled-jsx'. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+[00:34:39.749] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:34:39.765] Server  LOG      ✓ Compiled in 618ms
+[00:34:42.326] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:42.376] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:51.618] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:42:50.573] Server  LOG      ✓ Compiled in 7s
+[00:42:51.156] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/crm-tools/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:42:53.835] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:42:58.380] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:30.837] Server  LOG      ✓ Compiled in 538ms
+[00:44:31.000] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/crm-tools/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:44:31.004] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/crm-tools/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:44:33.023] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:33.100] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:30.652] Server  LOG      ✓ Compiled in 275ms
+[00:58:03.853] Server  LOG      ✓ Compiled in 304ms
+[01:01:10.986] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:01.857] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:07.489] Server  LOG      ✓ Compiled in 857ms
+[01:22:18.416] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:26:10.064] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:26:58.963] Server  LOG      ✓ Compiled in 424ms
+[01:27:14.401] Server  LOG      ✓ Compiled in 419ms
+[01:27:32.727] Server  LOG      ✓ Compiled in 434ms
+[01:27:51.659] Server  LOG      ✓ Compiled in 215ms
+[01:28:02.432] Server  LOG      ✓ Compiled in 185ms
+[01:28:37.912] Server  LOG      ✓ Compiled in 516ms
+[01:34:58.486] Server  LOG      ✓ Compiled in 299ms
+[01:35:07.974] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:35:55.191] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:49:05.667] Server  LOG      ✓ Compiled in 632ms
+[01:49:11.931] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

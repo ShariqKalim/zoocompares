@@ -70,24 +70,34 @@ const DEFAULT_PRODUCTS: ComparisonProduct[] = [
     colorTheme: 'teal',
     createdAt: '2024-01-01T00:00:00.000Z',
   },
-  // ====================================
-  // TO ADD MORE PRODUCTS: Copy the format above and add new objects here
-  // 
-  // Example:
-  // {
-  //   id: 'default_credit_cards',
-  //   name: 'Credit Cards',
-  //   description: 'Compare the best credit cards with rewards and benefits',
-  //   imageUrl: '/credit-cards.jpg',
-  //   slug: 'credit-cards',
-  //   icon: 'CreditCard',
-  //   colorTheme: 'orange',
-  //   createdAt: '2024-01-01T00:00:00.000Z',
-  // },
-  // 
-  // Available icons: Check lib/icon-library.ts for full list
-  // Available colors: blue, green, purple, orange, pink, indigo, red, yellow, teal, cyan
-  // ====================================
+
+  // -----------------------------
+  // ⭐ NEW CATEGORY #1 — CRM Tools
+  // -----------------------------
+  {
+    id: 'crm_tools',
+    name: 'CRM Tools',
+    description: 'Compare top CRM tools for sales pipelines, automation, and customer management',
+    imageUrl: '/crm-tools.jpg',
+    slug: 'crm-tools',
+    icon: 'Users',
+    colorTheme: 'pink',
+    createdAt: '2024-01-01T00:00:00.000Z',
+  },
+
+  // ------------------------------------------
+  // ⭐ NEW CATEGORY #2 — E-Commerce Business Tools
+  // ------------------------------------------
+  {
+    id: 'ecommerce_business_tools',
+    name: 'E-Commerce Tools',
+    description: 'Compare the best e-commerce platforms and tools for online business growth',
+    imageUrl: '/ecommerce-tools.jpg',
+    slug: 'e-commerce',
+    icon: 'ShoppingCart',
+    colorTheme: 'red',
+    createdAt: '2024-01-01T00:00:00.000Z',
+  }
 ];
 
 export function getProducts(): ComparisonProduct[] {

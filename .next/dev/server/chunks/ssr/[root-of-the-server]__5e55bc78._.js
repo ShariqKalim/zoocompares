@@ -70,16 +70,16 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$g
 ;
 ;
 const metadata = {
-    title: 'zoocompares - Smart Product Comparison & Reviews | Best Online Comparison Tool',
-    description: 'Compare products side-by-side with zoocompares. Find the best deals, prices, features, and reviews for web hosting, VPN, trading accounts, and 50+ product categories. Make informed buying decisions instantly.',
+    title: 'DigiCompares - Smart Product Comparison & Reviews | Best Online Comparison Tool',
+    description: 'Compare products side-by-side with DigiCompares. Find the best deals, prices, features, and reviews for web hosting, VPN, trading accounts, and 50+ product categories. Make informed buying decisions instantly.',
     keywords: 'product comparison, price comparison, product reviews, best deals, online shopping, comparison tool, features comparison',
     authors: [
         {
-            name: 'zoocompares Team'
+            name: 'DigiCompares Team'
         }
     ],
-    creator: 'zoocompares',
-    publisher: 'zoocompares',
+    creator: 'DigiCompares',
+    publisher: 'DigiCompares',
     formatDetection: {
         email: false,
         telephone: false,
@@ -88,14 +88,14 @@ const metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://zoocompares.com',
-        title: 'zoocompares - Smart Product Comparison Platform',
+        url: 'https://digicompares.com',
+        title: 'DigiCompares - Smart Product Comparison Platform',
         description: 'Find the best products with intelligent side-by-side comparisons. Compare 1000+ products across 50+ categories.',
-        siteName: 'zoocompares'
+        siteName: 'DigiCompares'
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'zoocompares - Smart Product Comparison',
+        title: 'DigiCompares - Smart Product Comparison',
         description: 'Compare products and find the perfect match for your needs'
     },
     robots: {
@@ -141,15 +141,15 @@ function RootLayout({ children }) {
                             __html: JSON.stringify({
                                 '@context': 'https://schema.org',
                                 '@type': 'WebApplication',
-                                'name': 'zoocompares',
+                                'name': 'DigiCompares',
                                 'description': 'Smart product comparison platform for finding the best deals and reviews',
-                                'url': 'https://zoocompares.com',
+                                'url': 'https://digicompares.com',
                                 'applicationCategory': 'Shopping',
                                 'offers': {
                                     '@type': 'AggregateOffer',
                                     'priceCurrency': 'USD',
                                     'price': '0',
-                                    'url': 'https://zoocompares.com'
+                                    'url': 'https://digicompares.com'
                                 },
                                 'aggregateRating': {
                                     '@type': 'AggregateRating',
@@ -160,7 +160,7 @@ function RootLayout({ children }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 73,
+                        lineNumber: 74,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
@@ -169,19 +169,19 @@ function RootLayout({ children }) {
                             __html: JSON.stringify({
                                 '@context': 'https://schema.org',
                                 '@type': 'Organization',
-                                'name': 'zoocompares',
-                                'url': 'https://zoocompares.com',
-                                'logo': 'https://zoocompares.com/logo.png',
+                                'name': 'DigiCompares',
+                                'url': 'https://digicompares.com',
+                                'logo': 'https://digicompares.com/logo.png',
                                 'sameAs': [
-                                    'https://www.facebook.com/zoocompares',
-                                    'https://twitter.com/zoocompares',
-                                    'https://linkedin.com/company/zoocompares'
+                                    'https://www.facebook.com/digicompares',
+                                    'https://twitter.com/digicompares',
+                                    'https://linkedin.com/company/digicompares'
                                 ]
                             })
                         }
                     }, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 94,
+                        lineNumber: 97,
                         columnNumber: 9
                     }, this)
                 ]
@@ -191,11 +191,11 @@ function RootLayout({ children }) {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
-                className: `font-sans antialiased`,
+                className: "font-sans antialiased",
                 children: children
             }, void 0, false, {
                 fileName: "[project]/app/layout.tsx",
-                lineNumber: 109,
+                lineNumber: 113,
                 columnNumber: 7
             }, this)
         ]

@@ -6,12 +6,12 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'zoocompares - Smart Product Comparison & Reviews | Best Online Comparison Tool',
-  description: 'Compare products side-by-side with zoocompares. Find the best deals, prices, features, and reviews for web hosting, VPN, trading accounts, and 50+ product categories. Make informed buying decisions instantly.',
+  title: 'DigiCompares - Smart Product Comparison & Reviews | Best Online Comparison Tool',
+  description: 'Compare products side-by-side with DigiCompares. Find the best deals, prices, features, and reviews for web hosting, VPN, trading accounts, and 50+ product categories. Make informed buying decisions instantly.',
   keywords: 'product comparison, price comparison, product reviews, best deals, online shopping, comparison tool, features comparison',
-  authors: [{ name: 'zoocompares Team' }],
-  creator: 'zoocompares',
-  publisher: 'zoocompares',
+  authors: [{ name: 'DigiCompares Team' }],
+  creator: 'DigiCompares',
+  publisher: 'DigiCompares',
   formatDetection: {
     email: false,
     telephone: false,
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://zoocompares.com',
-    title: 'zoocompares - Smart Product Comparison Platform',
+    url: 'https://digicompares.com',
+    title: 'DigiCompares - Smart Product Comparison Platform',
     description: 'Find the best products with intelligent side-by-side comparisons. Compare 1000+ products across 50+ categories.',
-    siteName: 'zoocompares',
+    siteName: 'DigiCompares',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'zoocompares - Smart Product Comparison',
+    title: 'DigiCompares - Smart Product Comparison',
     description: 'Compare products and find the perfect match for your needs',
   },
   robots: {
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     ],
     apple: '/apple-icon.png',
   },
-    generator: 'v0.app'
+  generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -70,19 +70,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* WebApplication Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'WebApplication',
-            'name': 'zoocompares',
+            'name': 'DigiCompares',
             'description': 'Smart product comparison platform for finding the best deals and reviews',
-            'url': 'https://zoocompares.com',
+            'url': 'https://digicompares.com',
             'applicationCategory': 'Shopping',
             'offers': {
               '@type': 'AggregateOffer',
               'priceCurrency': 'USD',
               'price': '0',
-              'url': 'https://zoocompares.com',
+              'url': 'https://digicompares.com',
             },
             'aggregateRating': {
               '@type': 'AggregateRating',
@@ -91,22 +92,25 @@ export default function RootLayout({
             },
           })
         }} />
+
+        {/* Organization Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Organization',
-            'name': 'zoocompares',
-            'url': 'https://zoocompares.com',
-            'logo': 'https://zoocompares.com/logo.png',
+            'name': 'DigiCompares',
+            'url': 'https://digicompares.com',
+            'logo': 'https://digicompares.com/logo.png',
             'sameAs': [
-              'https://www.facebook.com/zoocompares',
-              'https://twitter.com/zoocompares',
-              'https://linkedin.com/company/zoocompares',
+              'https://www.facebook.com/digicompares',
+              'https://twitter.com/digicompares',
+              'https://linkedin.com/company/digicompares',
             ],
           })
         }} />
       </head>
-      <body className={`font-sans antialiased`}>
+
+      <body className="font-sans antialiased">
         {children}
       </body>
     </html>
