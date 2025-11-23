@@ -68,6 +68,32 @@ const DEFAULT_PRODUCTS = [
         icon: 'Server',
         colorTheme: 'teal',
         createdAt: '2024-01-01T00:00:00.000Z'
+    },
+    // -----------------------------
+    // ⭐ NEW CATEGORY #1 — CRM Tools
+    // -----------------------------
+    {
+        id: 'crm_tools',
+        name: 'CRM Tools',
+        description: 'Compare top CRM tools for sales pipelines, automation, and customer management',
+        imageUrl: '/crm-tools.jpg',
+        slug: 'crm-tools',
+        icon: 'Users',
+        colorTheme: 'pink',
+        createdAt: '2024-01-01T00:00:00.000Z'
+    },
+    // ------------------------------------------
+    // ⭐ NEW CATEGORY #2 — E-Commerce Business Tools
+    // ------------------------------------------
+    {
+        id: 'ecommerce_business_tools',
+        name: 'E-Commerce Tools',
+        description: 'Compare the best e-commerce platforms and tools for online business growth',
+        imageUrl: '/ecommerce-tools.jpg',
+        slug: 'e-commerce',
+        icon: 'ShoppingCart',
+        colorTheme: 'red',
+        createdAt: '2024-01-01T00:00:00.000Z'
     }
 ];
 function getProducts() {
