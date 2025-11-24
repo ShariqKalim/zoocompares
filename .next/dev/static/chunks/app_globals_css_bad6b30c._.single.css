@@ -3431,6 +3431,10 @@
     padding-block: calc(var(--spacing) * 20);
   }
 
+  .pt-1 {
+    padding-top: calc(var(--spacing) * 1);
+  }
+
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
   }
@@ -3568,6 +3572,10 @@
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+
+  .text-\[8px\] {
+    font-size: 8px;
   }
 
   .leading-none {

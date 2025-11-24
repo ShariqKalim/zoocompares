@@ -1,4 +1,7 @@
 {
+  "/[slug]/page": "app/[slug]/page.js",
+  "/api/track-click/route": "app/api/track-click/route.js",
+  "/coupons/page": "app/coupons/page.js",
   "/page": "app/page.js",
   "/web-hosting/page": "app/web-hosting/page.js"
 }
