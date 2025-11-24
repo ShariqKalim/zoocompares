@@ -2,9 +2,17 @@
   "/[slug]/page": "app/[slug]/page.js",
   "/_global-error/page": "app/_global-error/page.js",
   "/_not-found/page": "app/_not-found/page.js",
+  "/ai-tools/page": "app/ai-tools/page.js",
+  "/cloud-workspaces/page": "app/cloud-workspaces/page.js",
+  "/coupons/page": "app/coupons/page.js",
+  "/crm-tools/page": "app/crm-tools/page.js",
   "/demat-accounts/page": "app/demat-accounts/page.js",
+  "/e-commerce/page": "app/e-commerce/page.js",
+  "/grammarly-ai-assistant/page": "app/grammarly-ai-assistant/page.js",
   "/page": "app/page.js",
   "/search/[query]/page": "app/search/[query]/page.js",
+  "/seo-tools/page": "app/seo-tools/page.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/vpn/page": "app/vpn/page.js",
   "/web-hosting/page": "app/web-hosting/page.js"
 }

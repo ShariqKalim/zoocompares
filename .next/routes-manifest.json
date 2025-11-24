@@ -57,10 +57,58 @@
       "namedRegex": "^/_not\\-found(?:/)?$"
     },
     {
+      "page": "/ai-tools",
+      "regex": "^/ai\\-tools(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ai\\-tools(?:/)?$"
+    },
+    {
+      "page": "/cloud-workspaces",
+      "regex": "^/cloud\\-workspaces(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cloud\\-workspaces(?:/)?$"
+    },
+    {
+      "page": "/coupons",
+      "regex": "^/coupons(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/coupons(?:/)?$"
+    },
+    {
+      "page": "/crm-tools",
+      "regex": "^/crm\\-tools(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/crm\\-tools(?:/)?$"
+    },
+    {
       "page": "/demat-accounts",
       "regex": "^/demat\\-accounts(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/demat\\-accounts(?:/)?$"
+    },
+    {
+      "page": "/e-commerce",
+      "regex": "^/e\\-commerce(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/e\\-commerce(?:/)?$"
+    },
+    {
+      "page": "/grammarly-ai-assistant",
+      "regex": "^/grammarly\\-ai\\-assistant(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/grammarly\\-ai\\-assistant(?:/)?$"
+    },
+    {
+      "page": "/seo-tools",
+      "regex": "^/seo\\-tools(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/seo\\-tools(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
     },
     {
       "page": "/vpn",

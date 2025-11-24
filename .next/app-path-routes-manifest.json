@@ -2,9 +2,17 @@
   "/[slug]/page": "/[slug]",
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
+  "/ai-tools/page": "/ai-tools",
+  "/cloud-workspaces/page": "/cloud-workspaces",
+  "/coupons/page": "/coupons",
+  "/crm-tools/page": "/crm-tools",
   "/demat-accounts/page": "/demat-accounts",
+  "/e-commerce/page": "/e-commerce",
+  "/grammarly-ai-assistant/page": "/grammarly-ai-assistant",
   "/page": "/",
   "/search/[query]/page": "/search/[query]",
+  "/seo-tools/page": "/seo-tools",
+  "/sitemap.xml/route": "/sitemap.xml",
   "/vpn/page": "/vpn",
   "/web-hosting/page": "/web-hosting"
 }

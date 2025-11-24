@@ -45,10 +45,64 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../app/ai-tools/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/ai-tools">> = Specific
+  const handler = {} as typeof import("../../app/ai-tools/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/cloud-workspaces/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/cloud-workspaces">> = Specific
+  const handler = {} as typeof import("../../app/cloud-workspaces/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/coupons/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/coupons">> = Specific
+  const handler = {} as typeof import("../../app/coupons/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/crm-tools/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/crm-tools">> = Specific
+  const handler = {} as typeof import("../../app/crm-tools/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../app/demat-accounts/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/demat-accounts">> = Specific
   const handler = {} as typeof import("../../app/demat-accounts/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/e-commerce/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/e-commerce">> = Specific
+  const handler = {} as typeof import("../../app/e-commerce/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/grammarly-ai-assistant/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/grammarly-ai-assistant">> = Specific
+  const handler = {} as typeof import("../../app/grammarly-ai-assistant/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
@@ -67,6 +121,15 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 {
   type __IsExpected<Specific extends AppPageConfig<"/search/[query]">> = Specific
   const handler = {} as typeof import("../../app/search/[query]/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/seo-tools/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/seo-tools">> = Specific
+  const handler = {} as typeof import("../../app/seo-tools/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
