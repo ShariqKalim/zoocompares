@@ -3,6 +3,7 @@
   "/_global-error/page": "app/_global-error/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/ai-tools/page": "app/ai-tools/page.js",
+  "/api/track-click/route": "app/api/track-click/route.js",
   "/cloud-workspaces/page": "app/cloud-workspaces/page.js",
   "/coupons/page": "app/coupons/page.js",
   "/crm-tools/page": "app/crm-tools/page.js",

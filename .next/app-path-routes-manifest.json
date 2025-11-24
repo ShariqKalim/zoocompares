@@ -3,6 +3,7 @@
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
   "/ai-tools/page": "/ai-tools",
+  "/api/track-click/route": "/api/track-click",
   "/cloud-workspaces/page": "/cloud-workspaces",
   "/coupons/page": "/coupons",
   "/crm-tools/page": "/crm-tools",

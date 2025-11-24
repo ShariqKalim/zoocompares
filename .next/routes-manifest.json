@@ -63,6 +63,12 @@
       "namedRegex": "^/ai\\-tools(?:/)?$"
     },
     {
+      "page": "/api/track-click",
+      "regex": "^/api/track\\-click(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/track\\-click(?:/)?$"
+    },
+    {
       "page": "/cloud-workspaces",
       "regex": "^/cloud\\-workspaces(?:/)?$",
       "routeKeys": {},
